@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/GPSLocation" />
+            <option value="$PROJECT_DIR$/PullToRefresh-master" />
+            <option value="$PROJECT_DIR$/android-ultra-pull-to-refresh" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/common" />
+            <option value="$PROJECT_DIR$/common-base" />
+            <option value="$PROJECT_DIR$/common-ui" />
+            <option value="$PROJECT_DIR$/demobase" />
+            <option value="$PROJECT_DIR$/demoui" />
+            <option value="$PROJECT_DIR$/gpslocationtest" />
+            <option value="$PROJECT_DIR$/installapk" />
+            <option value="$PROJECT_DIR$/judge3g4g" />
+            <option value="$PROJECT_DIR$/key" />
+            <option value="$PROJECT_DIR$/runtimepermission" />
+            <option value="$PROJECT_DIR$/uploadPicDemo" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

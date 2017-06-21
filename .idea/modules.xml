@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidDemo.iml" filepath="$PROJECT_DIR$/AndroidDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GPSLocation/GPSLocation.iml" filepath="$PROJECT_DIR$/GPSLocation/GPSLocation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PullToRefresh-master/PullToRefresh-master.iml" filepath="$PROJECT_DIR$/PullToRefresh-master/PullToRefresh-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-ultra-pull-to-refresh/android-ultra-pull-to-refresh.iml" filepath="$PROJECT_DIR$/android-ultra-pull-to-refresh/android-ultra-pull-to-refresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-base/common-base.iml" filepath="$PROJECT_DIR$/common-base/common-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-ui/common-ui.iml" filepath="$PROJECT_DIR$/common-ui/common-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demobase/demobase.iml" filepath="$PROJECT_DIR$/demobase/demobase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demoui/demoui.iml" filepath="$PROJECT_DIR$/demoui/demoui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gpslocationtest/gpslocationtest.iml" filepath="$PROJECT_DIR$/gpslocationtest/gpslocationtest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/installapk/installapk.iml" filepath="$PROJECT_DIR$/installapk/installapk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/judge3g4g/judge3g4g.iml" filepath="$PROJECT_DIR$/judge3g4g/judge3g4g.iml" />
+      <module fileurl="file://$PROJECT_DIR$/key/key.iml" filepath="$PROJECT_DIR$/key/key.iml" />
+      <module fileurl="file://$PROJECT_DIR$/runtimepermission/runtimepermission.iml" filepath="$PROJECT_DIR$/runtimepermission/runtimepermission.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uploadPicDemo/uploadPicDemo.iml" filepath="$PROJECT_DIR$/uploadPicDemo/uploadPicDemo.iml" />
+    </modules>
+  </component>
+</project>

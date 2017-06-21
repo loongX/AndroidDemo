@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+        android:accessibilityEventTypes="typeAllMask"
+        android:accessibilityFeedbackType="feedbackGeneric"
+        android:accessibilityFlags="flagDefault"
+        android:canRetrieveWindowContent="true"
+        android:description="@string/desc"
+        android:packageNames="com.android.packageinstaller">
+    <!--android:packageNames="com.android.packageinstaller"-->
+    <!--android:settingsActivity="com.your.settingActivity"-->
+    <!--android:packageNames="packageName1,packageName2"-->
+</accessibility-service>

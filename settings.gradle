@@ -1,0 +1,2 @@
+include ':app', ':android-ultra-pull-to-refresh', ':PullToRefresh-master', ':installapk', ':key', ':GPSLocation', ':gpslocationtest', ':runtimepermission', ':demoui', ':common-base', ':demobase', ':judge3g4g', ':common', ':common-ui'
+include ':uploadPicDemo'

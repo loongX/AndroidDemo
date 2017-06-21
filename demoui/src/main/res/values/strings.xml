@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UIDemo</string>
+    //ActivityDialog
+    <string name="title_activity_activity_dialog">ActivityDialog</string>
+</resources>
