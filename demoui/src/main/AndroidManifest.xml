@@ -31,6 +31,9 @@
         <activity
             android:name=".listviewfrash.ReFlashListViewMainActivity">
         </activity>
+        <activity
+            android:name=".beziercurve.Beziercurve">
+        </activity>
     </application>
 
 </manifest>

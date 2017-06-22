@@ -7,52 +7,40 @@ The following files were *not* copied into the new Gradle project; you
 should evaluate whether these are still needed in your project and if
 so manually move them:
 
-* .idea\
-* .idea\UploadPicDemo.iml
-* .idea\compiler.xml
-* .idea\copyright\
-* .idea\copyright\profiles_settings.xml
-* .idea\misc.xml
-* .idea\modules.xml
-* .idea\workspace.xml
-* ic_launcher-web.png
+* BlogMoveWave.iml
+* BlogMoveWave.ipr
+* BlogMoveWave.iws
+* ant.properties
+* build.xml
+* out\
+* out\production\
+* out\production\BlogMoveWave\
+* out\production\BlogMoveWave\BlogMoveWave.apk
+* out\production\BlogMoveWave\BlogMoveWave.unaligned.apk
+* out\production\BlogMoveWave\com\
+* out\production\BlogMoveWave\com\harvic\
+* out\production\BlogMoveWave\com\harvic\BlogMoveWave\
+* out\production\BlogMoveWave\com\harvic\BlogMoveWave\BuildConfig.class
+* out\production\BlogMoveWave\com\harvic\BlogMoveWave\MyActivity.class
+* out\production\BlogMoveWave\com\harvic\BlogMoveWave\MyView$1.class
+* out\production\BlogMoveWave\com\harvic\BlogMoveWave\MyView.class
+* out\production\BlogMoveWave\com\harvic\BlogMoveWave\R$attr.class
+* out\production\BlogMoveWave\com\harvic\BlogMoveWave\R$drawable.class
+* out\production\BlogMoveWave\com\harvic\BlogMoveWave\R$id.class
+* out\production\BlogMoveWave\com\harvic\BlogMoveWave\R$layout.class
+* out\production\BlogMoveWave\com\harvic\BlogMoveWave\R$string.class
+* out\production\BlogMoveWave\com\harvic\BlogMoveWave\R.class
 * proguard-project.txt
-
-Replaced Jars with Dependencies:
---------------------------------
-The importer recognized the following .jar files as third party
-libraries and replaced them with Gradle dependencies instead. This has
-the advantage that more explicit version information is known, and the
-libraries can be updated automatically. However, it is possible that
-the .jar file in your project was of an older version than the
-dependency we picked, which could render the project not compileable.
-You can disable the jar replacement in the import wizard and try again:
-
-android-support-v4.jar => com.android.support:support-v4:21.+
 
 Moved Files:
 ------------
 Android Gradle projects use a different directory structure than ADT
 Eclipse projects. Here's how the projects were restructured:
 
-* AndroidManifest.xml => uploadPicDemo\src\main\AndroidManifest.xml
-* assets\ => uploadPicDemo\src\main\assets
-* res\ => uploadPicDemo\src\main\res\
-* src\ => uploadPicDemo\src\main\java\
-
-Missing Android Support Repository:
------------------------------------
-Some useful libraries, such as the Android Support Library, are
-installed from a special Maven repository, which should be installed
-via the SDK manager.
-
-It looks like this library is missing from your SDK installation at:
-null
-
-To install it, open the SDK manager, and in the Extras category,
-select "Android Support Repository". You may also want to install the
-"Google Repository" if you want to use libraries like Google Play
-Services.
+* AndroidManifest.xml => blogMoveWave\src\main\AndroidManifest.xml
+* assets\ => blogMoveWave\src\main\assets
+* res\ => blogMoveWave\src\main\res\
+* src\ => blogMoveWave\src\main\java\
 
 Next Steps:
 -----------

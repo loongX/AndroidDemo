@@ -1,6 +1,7 @@
 package com.example.uidemo;
 
 import com.example.uidemo.activitydialog.DialogControl;
+import com.example.uidemo.beziercurve.Beziercurve;
 import com.example.uidemo.listviewfrash.ReFlashListViewMainActivity;
 import com.example.uidemo.slideunlockview.SlideUnlockViewControl;
 
@@ -14,13 +15,16 @@ public class CategoryConstant1 {
             DialogControl.class,//1
             SlideUnlockViewControl.class,//2
             ReFlashListViewMainActivity.class,//3
+            Beziercurve.class,//4
+
 
     };
 
     public String[] DESCRIBE = new String[] {
-            "DialogControl",//1
-            "SlideUnlockViewControl",//2
-            "ReFlashListViewMainActivity",//3
+            "activitydialog",//1
+            "滑动解锁",//2
+            "listview下拉刷新",//3
+            "贝塞尔曲线",//4
 
 
     };
