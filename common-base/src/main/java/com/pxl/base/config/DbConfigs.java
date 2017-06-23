@@ -1,8 +1,8 @@
 package com.pxl.base.config;
 
-import org.xutils.DbManager;
-import org.xutils.common.util.LogUtil;
-import org.xutils.ex.DbException;
+import com.pxl.base.DbManager;
+import com.pxl.base.common.util.LogUtil;
+import com.pxl.base.ex.DbException;
 
 /**
  * Created by wyouflf on 15/7/31.

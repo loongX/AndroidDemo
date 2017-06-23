@@ -18,10 +18,10 @@ package com.pxl.base.db.sqlite;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteStatement;
 
-import org.xutils.common.util.KeyValue;
-import org.xutils.db.converter.ColumnConverter;
-import org.xutils.db.converter.ColumnConverterFactory;
-import org.xutils.db.table.ColumnUtils;
+import com.pxl.base.common.util.KeyValue;
+import com.pxl.base.db.converter.ColumnConverter;
+import com.pxl.base.db.converter.ColumnConverterFactory;
+import com.pxl.base.db.table.ColumnUtils;
 
 import java.util.ArrayList;
 import java.util.List;

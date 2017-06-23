@@ -2,7 +2,7 @@ package com.pxl.base.db.converter;
 
 import android.database.Cursor;
 
-import org.xutils.db.sqlite.ColumnDbType;
+import com.pxl.base.db.sqlite.ColumnDbType;
 
 import java.util.Date;
 

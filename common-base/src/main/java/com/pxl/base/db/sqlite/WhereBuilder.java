@@ -17,8 +17,8 @@ package com.pxl.base.db.sqlite;
 
 import android.text.TextUtils;
 
-import org.xutils.db.converter.ColumnConverterFactory;
-import org.xutils.db.table.ColumnUtils;
+import com.pxl.base.db.converter.ColumnConverterFactory;
+import com.pxl.base.db.table.ColumnUtils;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;

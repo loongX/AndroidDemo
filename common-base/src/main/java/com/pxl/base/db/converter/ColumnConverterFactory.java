@@ -1,7 +1,7 @@
 package com.pxl.base.db.converter;
 
-import org.xutils.common.util.LogUtil;
-import org.xutils.db.sqlite.ColumnDbType;
+import com.pxl.base.common.util.LogUtil;
+import com.pxl.base.db.sqlite.ColumnDbType;
 
 import java.util.Date;
 import java.util.concurrent.ConcurrentHashMap;

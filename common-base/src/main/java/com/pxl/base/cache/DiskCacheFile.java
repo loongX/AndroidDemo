@@ -1,7 +1,7 @@
 package com.pxl.base.cache;
 
-import org.xutils.common.util.IOUtil;
-import org.xutils.common.util.ProcessLock;
+import com.pxl.base.common.util.IOUtil;
+import com.pxl.base.common.util.ProcessLock;
 
 import java.io.Closeable;
 import java.io.File;

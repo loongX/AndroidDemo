@@ -3,18 +3,18 @@ package com.pxl.base.cache;
 
 import android.text.TextUtils;
 
-import org.xutils.DbManager;
-import org.xutils.common.task.PriorityExecutor;
-import org.xutils.common.util.FileUtil;
-import org.xutils.common.util.IOUtil;
-import org.xutils.common.util.LogUtil;
-import org.xutils.common.util.MD5;
-import org.xutils.common.util.ProcessLock;
-import org.xutils.config.DbConfigs;
-import org.xutils.db.sqlite.WhereBuilder;
-import org.xutils.ex.DbException;
-import org.xutils.ex.FileLockedException;
-import org.xutils.x;
+import com.pxl.base.DbManager;
+import com.pxl.base.common.task.PriorityExecutor;
+import com.pxl.base.common.util.FileUtil;
+import com.pxl.base.common.util.IOUtil;
+import com.pxl.base.common.util.LogUtil;
+import com.pxl.base.common.util.MD5;
+import com.pxl.base.common.util.ProcessLock;
+import com.pxl.base.config.DbConfigs;
+import com.pxl.base.db.sqlite.WhereBuilder;
+import com.pxl.base.ex.DbException;
+import com.pxl.base.ex.FileLockedException;
+import com.pxl.base.x;
 
 import java.io.File;
 import java.io.IOException;

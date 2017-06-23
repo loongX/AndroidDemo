@@ -1,7 +1,7 @@
 package com.pxl.base.cache;
 
-import org.xutils.db.annotation.Column;
-import org.xutils.db.annotation.Table;
+import com.pxl.base.db.annotation.Column;
+import com.pxl.base.db.annotation.Table;
 
 import java.util.Date;
 
