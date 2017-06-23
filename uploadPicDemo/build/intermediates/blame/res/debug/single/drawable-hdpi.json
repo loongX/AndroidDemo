@@ -1,5 +1,21 @@
 [
     {
+        "merged": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher.png",
+        "source": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\login_pwd.png",
+        "source": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\drawable-hdpi\\login_pwd.png"
+    },
+    {
+        "merged": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\login_user.png",
+        "source": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\drawable-hdpi\\login_user.png"
+    },
+    {
+        "merged": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_add_pic.png",
+        "source": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\drawable-hdpi\\ic_add_pic.png"
+    },
+    {
         "merged": "D:\\Android_Workspace\\demo\\AndroidDemo\\uploadPicDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\login_pwd.png",
         "source": "D:\\Android_Workspace\\demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\drawable-hdpi\\login_pwd.png"
     },
