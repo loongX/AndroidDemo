@@ -1,4 +1,4 @@
-package com.example.basedemo;
+package com.example.basedemo.Json;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
