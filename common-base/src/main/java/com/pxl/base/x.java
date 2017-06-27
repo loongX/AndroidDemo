@@ -3,10 +3,15 @@ package com.pxl.base;
 import android.app.Application;
 import android.content.Context;
 
-import org.xutils.common.task.TaskControllerImpl;
-import org.xutils.db.DbManagerImpl;
-import org.xutils.http.HttpManagerImpl;
-import org.xutils.image.ImageManagerImpl;
+//import org.xutils.common.task.TaskControllerImpl;
+//import org.xutils.db.DbManagerImpl;
+//import org.xutils.http.HttpManagerImpl;
+//import org.xutils.image.ImageManagerImpl;
+
+import com.pxl.base.common.task.TaskControllerImpl;
+import com.pxl.base.db.DbManagerImpl;
+import com.pxl.base.http.HttpManagerImpl;
+import com.pxl.base.image.ImageManagerImpl;
 
 import java.lang.reflect.Method;
 

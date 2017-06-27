@@ -1,10 +1,10 @@
 [
     {
-        "merged": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\build\\intermediates\\res\\merged\\debug\\anim\\push_bottom_in.xml",
-        "source": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\anim\\push_bottom_in.xml"
+        "merged": "D:\\Android_Workspace\\demo\\AndroidDemo\\uploadPicDemo\\build\\intermediates\\res\\merged\\debug\\anim\\push_bottom_in.xml",
+        "source": "D:\\Android_Workspace\\demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\anim\\push_bottom_in.xml"
     },
     {
-        "merged": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\build\\intermediates\\res\\merged\\debug\\anim\\push_bottom_out.xml",
-        "source": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\anim\\push_bottom_out.xml"
+        "merged": "D:\\Android_Workspace\\demo\\AndroidDemo\\uploadPicDemo\\build\\intermediates\\res\\merged\\debug\\anim\\push_bottom_out.xml",
+        "source": "D:\\Android_Workspace\\demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\anim\\push_bottom_out.xml"
     }
 ]

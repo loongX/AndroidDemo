@@ -1,18 +1,18 @@
 [
     {
-        "merged": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\build\\intermediates\\res\\merged\\debug\\layout\\layout_dialog_pic.xml",
-        "source": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\layout\\layout_dialog_pic.xml"
+        "merged": "D:\\Android_Workspace\\demo\\AndroidDemo\\uploadPicDemo\\build\\intermediates\\res\\merged\\debug\\layout\\layout_titlebar.xml",
+        "source": "D:\\Android_Workspace\\demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\layout\\layout_titlebar.xml"
     },
     {
-        "merged": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_upload.xml",
-        "source": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\layout\\activity_upload.xml"
+        "merged": "D:\\Android_Workspace\\demo\\AndroidDemo\\uploadPicDemo\\build\\intermediates\\res\\merged\\debug\\layout\\layout_dialog_pic.xml",
+        "source": "D:\\Android_Workspace\\demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\layout\\layout_dialog_pic.xml"
     },
     {
-        "merged": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\build\\intermediates\\res\\merged\\debug\\layout\\layout_titlebar.xml",
-        "source": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\layout\\layout_titlebar.xml"
+        "merged": "D:\\Android_Workspace\\demo\\AndroidDemo\\uploadPicDemo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "D:\\Android_Workspace\\demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
-        "source": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "D:\\Android_Workspace\\demo\\AndroidDemo\\uploadPicDemo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_upload.xml",
+        "source": "D:\\Android_Workspace\\demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\layout\\activity_upload.xml"
     }
 ]

@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+        "outputFile": "D:\\Android_Workspace\\demo\\AndroidDemo\\uploadPicDemo\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 263
                 },
                 "from": {
-                    "file": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\values\\dimens.xml",
+                    "file": "D:\\Android_Workspace\\demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\values\\dimens.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 319
                 },
                 "from": {
-                    "file": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\values\\dimens.xml",
+                    "file": "D:\\Android_Workspace\\demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\values\\dimens.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -49,13 +49,13 @@
                     "endOffset": 372
                 },
                 "from": {
-                    "file": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\values\\strings.xml",
+                    "file": "D:\\Android_Workspace\\demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 165,
+                        "startOffset": 164,
                         "endColumn": 52,
-                        "endOffset": 213
+                        "endOffset": 212
                     }
                 }
             },
@@ -68,13 +68,13 @@
                     "endOffset": 423
                 },
                 "from": {
-                    "file": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\values\\strings.xml",
+                    "file": "D:\\Android_Workspace\\demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 59,
+                        "startOffset": 58,
                         "endColumn": 50,
-                        "endOffset": 105
+                        "endOffset": 104
                     }
                 }
             },
@@ -87,13 +87,13 @@
                     "endOffset": 476
                 },
                 "from": {
-                    "file": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\values\\strings.xml",
+                    "file": "D:\\Android_Workspace\\demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 111,
+                        "startOffset": 110,
                         "endColumn": 52,
-                        "endOffset": 159
+                        "endOffset": 158
                     }
                 }
             },
@@ -107,14 +107,14 @@
                     "endOffset": 767
                 },
                 "from": {
-                    "file": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\values\\styles.xml",
+                    "file": "D:\\Android_Workspace\\demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 192,
+                        "startOffset": 191,
                         "endLine": 12,
                         "endColumn": 12,
-                        "endOffset": 484
+                        "endOffset": 481
                     }
                 }
             },
@@ -128,14 +128,14 @@
                     "endOffset": 927
                 },
                 "from": {
-                    "file": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\values\\styles.xml",
+                    "file": "D:\\Android_Workspace\\demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 525,
+                        "startOffset": 522,
                         "endLine": 17,
                         "endColumn": 12,
-                        "endOffset": 682
+                        "endOffset": 679
                     }
                 }
             },
@@ -149,14 +149,14 @@
                     "endOffset": 1155
                 },
                 "from": {
-                    "file": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\values\\styles.xml",
+                    "file": "D:\\Android_Workspace\\demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 30,
                         "startColumn": 4,
-                        "startOffset": 1106,
+                        "startOffset": 1103,
                         "endLine": 33,
                         "endColumn": 12,
-                        "endOffset": 1332
+                        "endOffset": 1329
                     }
                 }
             },
@@ -170,14 +170,14 @@
                     "endOffset": 1383
                 },
                 "from": {
-                    "file": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\values\\styles.xml",
+                    "file": "D:\\Android_Workspace\\demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
-                        "startOffset": 718,
+                        "startOffset": 715,
                         "endLine": 23,
                         "endColumn": 10,
-                        "endOffset": 944
+                        "endOffset": 941
                     }
                 }
             },
@@ -191,14 +191,14 @@
                     "endOffset": 1508
                 },
                 "from": {
-                    "file": "D:\\Android_Workspace\\Demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\values\\styles.xml",
+                    "file": "D:\\Android_Workspace\\demo\\AndroidDemo\\uploadPicDemo\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
-                        "startOffset": 962,
+                        "startOffset": 959,
                         "endLine": 28,
                         "endColumn": 12,
-                        "endOffset": 1084
+                        "endOffset": 1081
                     }
                 }
             }

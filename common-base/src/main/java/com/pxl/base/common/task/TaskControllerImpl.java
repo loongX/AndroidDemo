@@ -2,12 +2,17 @@ package com.pxl.base.common.task;
 
 import android.os.Looper;
 
-import org.xutils.common.Callback;
-import org.xutils.common.TaskController;
-import org.xutils.common.util.LogUtil;
-import org.xutils.x;
+//import org.xutils.common.Callback;
+//import org.xutils.common.TaskController;
+//import org.xutils.common.util.LogUtil;
+//import org.xutils.x;
+
+import com.pxl.base.common.Callback;
+import com.pxl.base.common.TaskController;
 
 import java.util.concurrent.atomic.AtomicInteger;
+
+import static android.R.attr.x;
 
 /**
  * Created by wyouflf on 15/6/5.
