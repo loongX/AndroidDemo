@@ -17,7 +17,8 @@ public class MyView extends View {
     private Paint mPaint;
     private Path mPath;
     private int mItemWaveLength = 400;
-    private int dx,dy;
+    private Object dx;
+    private int dy;
 
     public MyView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -60,7 +61,7 @@ public class MyView extends View {
         animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
-                dx = (int)animation.getAnimatedValue();
+                dx = animation.getAnimatedValue();
                 postInvalidate();
             }
         });
