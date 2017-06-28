@@ -195,8 +195,8 @@ public class PickerView extends View {
 
 		float baseline = (float) (y - (fmi.bottom / 2.0 + fmi.top / 2.0));
 
-		canvas.drawLine( x - (mViewWidth / 1.0f), y - (mViewHeight / 8.0f), x + (mViewWidth / 2.0f), y - (mViewHeight / 8.0f), mPaint);
-		canvas.drawLine( x - (mViewWidth / 2.0f), y + (mViewHeight / 8.0f), x + (mViewWidth / 2.0f), y + (mViewHeight / 8.0f), mPaint);
+		canvas.drawLine( x - (mViewWidth / 1.0f),  (mViewHeight / 8.0f) * 5, x + (mViewWidth / 2.0f), (mViewHeight / 8.0f) * 5, mPaint);
+		canvas.drawLine( x - (mViewWidth / 2.0f), (mViewHeight / 8.0f) * 3, x + (mViewWidth / 2.0f), (mViewHeight / 8.0f) * 3, mPaint);
 
 
 		canvas.drawText(mDataList.get(mCurrentSelected), x, baseline, mPaint);
