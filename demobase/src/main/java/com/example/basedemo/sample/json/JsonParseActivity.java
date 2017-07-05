@@ -1,11 +1,13 @@
 package com.example.basedemo.sample.json;
 
-import android.support.v7.app.AppCompatActivity;
+//import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 
 import com.example.basedemo.Json.GsonUtil;
 import com.example.basedemo.R;
+import com.example.basedemo.sample.json.Constant;
 import com.example.basedemo.sample.json.bean.Attributes;
 import com.example.basedemo.sample.json.bean.Ulist;
 import com.example.basedemo.sample.json.bean.UserAddress;
@@ -17,12 +19,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class MainActivity extends AppCompatActivity {
+public class JsonParseActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_jsonparse);
 
         testUserSampleTwo();
         testUserSampleOne();

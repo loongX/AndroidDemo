@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.example.basedemo.Json.ListItemFilter;
 import com.example.basedemo.Json.MultiTypeJsonParser;
+import com.example.basedemo.R;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.example.basedemo.sample.json.multitypejson.bean.AddressAttribute;
@@ -35,7 +36,7 @@ public class MultiTypeJsonActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_multitypejson);
     }
 
     public void generalParse(View view) throws JSONException {
