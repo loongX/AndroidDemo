@@ -19,7 +19,7 @@ public class CategoryConstant1 {
     };
 
     public String[] DESCRIBE = new String[] {
-            "下拉listview优化",//1
+            "listview网络加载优化",//1
             "简单json解析",//2
             "复杂json解析",//2
     };
