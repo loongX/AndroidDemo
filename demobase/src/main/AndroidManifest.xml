@@ -12,15 +12,12 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".sample.json.JsonParseActivity">
-
-        </activity>
-        <activity android:name=".sample.json.multitypejson.MultiTypeJsonActivity">
-
-        </activity>
-        <activity android:name=".listview.ListViewActivity">
-
-        </activity>
+        <activity android:name=".sample.json.JsonParseActivity"></activity>
+        <activity android:name=".sample.json.multitypejson.MultiTypeJsonActivity"></activity>
+        <activity android:name=".listview.ListViewActivity"></activity>
+        <activity android:name=".arouter.ArouterActivity"></activity>
+        <activity android:name=".arouter.testactivity.Test1Activity"></activity>
+        <activity android:name=".arouter.testactivity.Test2Activity"></activity>
     </application>
 
 </manifest>
