@@ -45,8 +45,8 @@ ext {
 
     dependencies = [
             "espresso-core" :  'com.android.support.test.espresso:espresso-core:2.2.2',
-            "appcompat-v7" :  'com.android.support:appcompat-v7:25.1.1',
-            "constraint-layout" :  'com.android.support.constraint:constraint-layout:1.0.0-alpha8',
+            "appcompat-v7" :  'com.android.support:appcompat-v7:25.3.1',
+            "constraint-layout" :  'com.android.support.constraint:constraint-layout:1.0.2',
             "junit" :  'junit:junit:4.12',
     ]
 
