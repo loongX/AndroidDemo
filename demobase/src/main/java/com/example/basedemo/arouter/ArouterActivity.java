@@ -13,7 +13,7 @@ import com.example.basedemo.R;
  * Created by Administrator on 2017/7/7.
  */
 
-public class ArouterActivity extends AppCompatActivity {
+public class ArouterActivity extends AppCompatActivity implements View.OnClickListener {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +33,12 @@ public class ArouterActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 ARouter.getInstance().build("/test/activity2").navigation();
+                // 2. 跳转并携带参数
+                ARouter.getInstance().build("/test/activity2")
+                        .withString("key1", "666L")
+//                        .withString("key3", "888")
+//                        .withObject("key4", new Test("Jack", "Rose"))
+                        .navigation();
             }
         });
     }
@@ -42,5 +48,10 @@ public class ArouterActivity extends AppCompatActivity {
         super.onResume();
 // 1. 应用内简单的跳转(通过URL跳转在'进阶用法'中)
 //        ARouter.getInstance().build("/test/activity1").navigation();
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 }
