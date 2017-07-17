@@ -18,6 +18,36 @@
         <activity android:name=".arouter.ArouterActivity"></activity>
         <activity android:name=".arouter.testactivity.Test1Activity"></activity>
         <activity android:name=".arouter.testactivity.Test2Activity"></activity>
+
+        <activity android:name=".arouter.testactivity.SchemeFilterActivity">
+
+            <!-- Schame -->
+            <intent-filter>
+                <data
+                    android:host="m.aliyun.com"
+                    android:scheme="arouter"/>
+
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+
+            <!-- App Links -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:host="m.aliyun.com"
+                    android:scheme="http"/>
+                <data
+                    android:host="m.aliyun.com"
+                    android:scheme="https"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

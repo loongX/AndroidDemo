@@ -17,11 +17,11 @@ import com.example.basedemo.R;
  */
 @Route(path = "/test/activity2")
 public class Test2Activity extends AppCompatActivity {
-//    @Autowired
-//    Long key1;
+    @Autowired
+    Long key1;
 
-//    @Autowired
-//    String key3;
+    @Autowired
+    String key3;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -30,11 +30,12 @@ public class Test2Activity extends AppCompatActivity {
 
         ARouter.getInstance().inject(this);
         TextView tvContent = (TextView) findViewById(R.id.tv_testcontent);
-//        String rec = String.format("key1 %s key2 %s" + key1 + key3);
+        String rec1 = "key1 %s " + key1 +"key2 :" + key3;
+        String rec2 = String.format("key1 %s key2 %s" , key1 , key3);
         tvContent.setText("test2" );
-        String value = getIntent().getStringExtra("key1");
-        if (!TextUtils.isEmpty(value)) {
-            Toast.makeText(this, "exist param :" + value, Toast.LENGTH_LONG).show();
-        }
+//        String value = getIntent().getStringExtra("key1");
+//        if (!TextUtils.isEmpty(value)) {
+            Toast.makeText(this, "exist param :" + rec2 , Toast.LENGTH_LONG).show();
+//        }
     }
 }

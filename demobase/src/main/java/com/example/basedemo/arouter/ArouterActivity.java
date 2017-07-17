@@ -35,8 +35,8 @@ public class ArouterActivity extends AppCompatActivity implements View.OnClickLi
                 ARouter.getInstance().build("/test/activity2").navigation();
                 // 2. 跳转并携带参数
                 ARouter.getInstance().build("/test/activity2")
-                        .withString("key1", "666L")
-//                        .withString("key3", "888")
+                        .withLong("key1", 666L)
+                        .withString("key3", "888")
 //                        .withObject("key4", new Test("Jack", "Rose"))
                         .navigation();
             }
