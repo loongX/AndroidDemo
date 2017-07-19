@@ -32,7 +32,7 @@ public class ArouterActivity extends AppCompatActivity implements View.OnClickLi
         findViewById(R.id.bt_totest2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ARouter.getInstance().build("/test/activity2").navigation();
+//                ARouter.getInstance().build("/test/activity2").navigation();
                 // 2. 跳转并携带参数
                 ARouter.getInstance().build("/test/activity2")
                         .withLong("key1", 666L)
