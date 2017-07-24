@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.example.basedemo">
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <application android:allowBackup="true" android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true" android:theme="@style/AppTheme">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.basedemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -11,43 +18,45 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".sample.json.JsonParseActivity"></activity>
-        <activity android:name=".sample.json.multitypejson.MultiTypeJsonActivity"></activity>
-        <activity android:name=".listview.ListViewActivity"></activity>
-        <activity android:name=".arouter.ArouterActivity"></activity>
-        <activity android:name=".arouter.testactivity.Test1Activity"></activity>
-        <activity android:name=".arouter.testactivity.Test2Activity"></activity>
-
+        <activity android:name=".sample.json.JsonParseActivity" />
+        <activity android:name=".sample.json.multitypejson.MultiTypeJsonActivity" />
+        <activity android:name=".listview.ListViewActivity" />
+        <activity android:name=".arouter.ArouterActivity" />
+        <activity android:name=".arouter.testactivity.Test1Activity" />
+        <activity android:name=".arouter.testactivity.Test2Activity" />
         <activity android:name=".arouter.testactivity.SchemeFilterActivity">
 
             <!-- Schame -->
             <intent-filter>
                 <data
                     android:host="m.aliyun.com"
-                    android:scheme="arouter"/>
+                    android:scheme="arouter" />
 
-                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.VIEW" />
 
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
             </intent-filter>
 
             <!-- App Links -->
             <intent-filter android:autoVerify="true">
-                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.VIEW" />
 
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
                     android:host="m.aliyun.com"
-                    android:scheme="http"/>
+                    android:scheme="http" />
                 <data
                     android:host="m.aliyun.com"
-                    android:scheme="https"/>
+                    android:scheme="https" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".view.ui.InjectViewActivity"
+            android:label="@string/title_activity_inject_view"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

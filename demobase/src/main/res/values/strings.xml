@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BaseDemo</string>
+    <string name="title_activity_inject_view">InjectViewActivity</string>
 </resources>
