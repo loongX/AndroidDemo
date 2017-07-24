@@ -39,6 +39,5 @@ dependencies {
     //阿里router机制
     compile 'com.alibaba:arouter-api:1.2.1.1'
     annotationProcessor 'com.alibaba:arouter-compiler:1.1.2.1'
-    compile files('libs/commons-lang3-3.4.jar')
-    compile files('libs/commons-collections4-4.1.jar')
+
 }

@@ -4,6 +4,7 @@ import com.example.basedemo.arouter.ArouterActivity;
 import com.example.basedemo.listview.ListViewActivity;
 import com.example.basedemo.sample.json.JsonParseActivity;
 import com.example.basedemo.sample.json.multitypejson.MultiTypeJsonActivity;
+import com.example.basedemo.view.ui.InjectViewActivity;
 
 
 /**
@@ -17,6 +18,7 @@ public class CategoryConstant1 {
             JsonParseActivity.class,//2
             MultiTypeJsonActivity.class,//3
             ArouterActivity.class,//4
+            InjectViewActivity.class,//5
 
     };
 
@@ -25,5 +27,6 @@ public class CategoryConstant1 {
             "简单json解析",//2
             "复杂json解析",//3
             "Arouter跳转",//4
+            "依赖注入",//5
     };
 }
