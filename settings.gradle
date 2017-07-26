@@ -9,10 +9,13 @@ include ':key'
 include ':GPSLocation'
 include ':gpslocationtest'
 include ':runtimepermission'
-include ':demoui'
-include 'common:common-ui'
+
 include 'common:common-base'
-include ':demobase'
+include 'common:common-ui'
+
+include 'demo:demobase'
+include 'demo:demoui'
+
 
 include ':xutils'
 include ':tiemerpicker'
