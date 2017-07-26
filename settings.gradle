@@ -14,7 +14,6 @@ include ':demoui'
 include 'common:common-ui'
 include 'common:common-base'
 include ':demobase'
-include ':judge3g4g'
 
 include ':xutils'
 include ':tiemerpicker'
