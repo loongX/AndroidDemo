@@ -3,7 +3,6 @@ include 'tests'
 include 'common'
 include 'demo'
 
-include ':android-ultra-pull-to-refresh'
 include ':PullToRefresh-master'
 include ':installapk'
 include ':key'
