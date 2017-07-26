@@ -2,13 +2,20 @@ include ':app'
 include 'tests'
 include 'common'
 include 'demo'
+include 'dump'
+include 'sample'
 
-include ':PullToRefresh-master'
-include ':installapk'
-include ':key'
-include ':GPSLocation'
-include ':gpslocationtest'
-include ':runtimepermission'
+include 'dump:blogMoveWave'
+include 'dump:GPSLocation'
+include 'dump:gpslocationtest'
+include 'dump:installapk'
+include 'dump:key'
+include 'dump:PullToRefresh-master'
+include 'dump:runtimepermission'
+include 'dump:tiemerpicker'
+include 'dump:uploadPicDemo'
+include 'dump:utilcode'
+include 'dump:utilcodeSample'
 
 include 'common:common-base'
 include 'common:common-ui'
@@ -18,10 +25,7 @@ include 'demo:demoui'
 
 
 include ':xutils'
-include ':tiemerpicker'
-include ':sample'
-include ':sample-demo'
-include ':utilcode'
-include ':utilcodeSample'
-include ':uploadPicDemo'
-include ':blogMoveWave'
+
+
+
+
