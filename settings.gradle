@@ -1,9 +1,12 @@
 include ':app'
-include 'tests'
 include 'common'
-include 'demo'
 include 'dump'
-include 'sample'
+include 'examples'
+include 'repositories'
+include 'tests'
+
+include 'common:common-base'
+include 'common:common-ui'
 
 include 'dump:blogMoveWave'
 include 'dump:GPSLocation'
@@ -17,12 +20,10 @@ include 'dump:uploadPicDemo'
 include 'dump:utilcode'
 include 'dump:utilcodeSample'
 
-include 'common:common-base'
-include 'common:common-ui'
+include 'examples:stepstrack'
 
-include 'demo:demobase'
-include 'demo:demoui'
-
+include 'repositories:demobase'
+include 'repositories:demoui'
 
 include ':xutils'
 
