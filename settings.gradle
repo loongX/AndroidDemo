@@ -19,13 +19,14 @@ include 'dump:tiemerpicker'
 include 'dump:uploadPicDemo'
 include 'dump:utilcode'
 include 'dump:utilcodeSample'
+include 'dump:xutils'
 
 include 'examples:stepstrack'
 
 include 'repositories:demobase'
 include 'repositories:demoui'
 
-include ':xutils'
+
 
 
 
