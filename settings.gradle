@@ -1,4 +1,4 @@
-include ':app'
+include ':app', ':ilog'
 include 'common'
 include 'dump'
 include 'samples'
