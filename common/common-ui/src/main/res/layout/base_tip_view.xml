@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/base_tips_view_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/base_view_tip_icon"/>
+    <TextView
+        android:id="@+id/base_tips_view_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/default_text_color"
+        android:textSize="@dimen/BasicTextSize"
+        android:layout_marginTop="10dp"
+        android:text="this is tip view"
+        />
+    <Button
+        android:id="@+id/base_tips_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="size"
+        android:textSize="@dimen/BasicTextSize"/>
+
+
+</LinearLayout>
