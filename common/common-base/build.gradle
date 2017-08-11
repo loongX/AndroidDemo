@@ -1,11 +1,15 @@
-apply plugin: 'com.android.application'
+if (common_base.toBoolean()) {
+    apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
+}
 
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
 
     defaultConfig {
-        applicationId "com.pxl.base"
+//        applicationId "com.pxl.base"
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 1
