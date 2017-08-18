@@ -5,4 +5,5 @@ package com.pxl.setpstrack;
  */
 
 public class GlobalSession {
+
 }
