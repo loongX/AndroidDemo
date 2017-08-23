@@ -2,8 +2,6 @@ package com.pxl.setpstrack.util;
 
 import android.os.storage.StorageManager;
 
-//import com.slzr.app.FileConstans;
-//import com.slzr.common.ILog;
 
 import java.io.BufferedReader;
 import java.io.File;
