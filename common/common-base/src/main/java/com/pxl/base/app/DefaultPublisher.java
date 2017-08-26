@@ -16,18 +16,17 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- *
  * Created by Rao on 2015/1/11.
  * //TODO 当前若没有调用unsubscribe()方法，不会自动回收。
  */
 /*package*/ class DefaultPublisher implements Publisher {
 
-    private Map subscriberMap	= new HashMap();
-    private final Object listenerLock		= new Object();
-    private Map<Object,Class> typeMap	= new HashMap();
+    private Map subscriberMap = new HashMap();
+    private final Object listenerLock = new Object();
+    private Map<Object, Class> typeMap = new HashMap();
     private Handler mHandler;
 
-    public DefaultPublisher(Looper looper){
+    public DefaultPublisher(Looper looper) {
         mHandler = new Handler(looper);
 
     }
@@ -35,71 +34,62 @@ import java.util.Set;
 
     @Override
     public <T> void subscribe(Class<T> eventClass, Subscriber<T> subscriber) {
-        if (eventClass == null)
-        {
+        if (eventClass == null) {
             throw new IllegalArgumentException("Event class must not be null");
         }
-        if (subscriber == null)
-        {
+        if (subscriber == null) {
             throw new IllegalArgumentException(
                     "Event subscriber must not be null");
         }
 
         //subscriber.cls = eventClass;
-        Class cls =  typeMap.get(subscriber);
-        if(cls != null){
-           if(cls != eventClass){
+        Class cls = typeMap.get(subscriber);
+        if (cls != null) {
+            if (cls != eventClass) {
                 throw new IllegalArgumentException(
-                       "Event subscriber has  subscribed!");
-           }
-            return ;
+                        "Event subscriber has  subscribed!");
+            }
+            return;
         }
-        typeMap.put(subscriber,eventClass);
-         subscribe(eventClass, subscriberMap,
+        typeMap.put(subscriber, eventClass);
+        subscribe(eventClass, subscriberMap,
                 new WeakReference<Subscriber>(subscriber));
     }
 
     @Override
     public void unsubscribe(Subscriber subscriber) {
         Class cls = typeMap.remove(subscriber);
-        if(cls!= null){
-            unsubscribe(cls, subscriberMap,subscriber);
+        if (cls != null) {
+            unsubscribe(cls, subscriberMap, subscriber);
         }
 
     }
 
     @Override
     public void publish(Object event) {
-        if (event == null)
-        {
+        if (event == null) {
             throw new IllegalArgumentException("Cannot publish null event.");
         }
         //publish(event, null, null, getSubscribers(event.getClass()));
 
-        mHandler.post(new PublishRunnable(event,  getSubscribers(event.getClass())));
+        mHandler.post(new PublishRunnable(event, getSubscribers(event.getClass())));
     }
 
-    public <T> List<T> getSubscribers(Class<T> eventClass)
-    {
-        synchronized (listenerLock)
-        {
+    public <T> List<T> getSubscribers(Class<T> eventClass) {
+        synchronized (listenerLock) {
             return getSubscribersToClass(eventClass);
         }
     }
 
-    public <T> List<T> getSubscribersToClass(Class<T> eventClass)
-    {
+    public <T> List<T> getSubscribersToClass(Class<T> eventClass) {
         List result = null;
         final Map classMap = subscriberMap;
         Set keys = classMap.keySet();
-        for (Iterator iterator = keys.iterator(); iterator.hasNext();)
-        {
+        for (Iterator iterator = keys.iterator(); iterator.hasNext(); ) {
             Class cl = (Class) iterator.next();
-            if (cl.isAssignableFrom(eventClass))
-            {
+            if (cl.isAssignableFrom(eventClass)) {
                 Collection subscribers = (Collection) classMap.get(cl);
-                if (result == null)
-                {
+                if (result == null) {
                     result = new ArrayList();
                 }
                 result.addAll(createCopyOfContentsRemoveWeakRefs(subscribers));
@@ -110,34 +100,25 @@ import java.util.Set;
     }
 
     private List createCopyOfContentsRemoveWeakRefs(
-            Collection subscribersOrVetoListeners)
-    {
-        if (subscribersOrVetoListeners == null)
-        {
+            Collection subscribersOrVetoListeners) {
+        if (subscribersOrVetoListeners == null) {
             return null;
         }
         List copyOfSubscribersOrVetolisteners = new ArrayList(
                 subscribersOrVetoListeners.size());
         for (Iterator iter = subscribersOrVetoListeners.iterator(); iter
-                .hasNext();)
-        {
+                .hasNext(); ) {
             Object elem = iter.next();
-             if (elem instanceof WeakReference)
-            {
+            if (elem instanceof WeakReference) {
                 Object hardRef = ((WeakReference) elem).get();
-                if (hardRef == null)
-                {
+                if (hardRef == null) {
                     // Was reclaimed, unsubscribe
                     iter.remove();
                     // decWeakRefPlusProxySubscriberCount();
-                }
-                else
-                {
+                } else {
                     copyOfSubscribersOrVetolisteners.add(hardRef);
                 }
-            }
-            else
-            {
+            } else {
                 copyOfSubscribersOrVetolisteners.add(elem);
             }
         }
@@ -145,15 +126,12 @@ import java.util.Set;
     }
 
     protected boolean subscribe(final Object classTopicOrPatternWrapper,
-                                final Map<Object, Object> subscriberMap, final Object subscriber)
-    {
-        if (classTopicOrPatternWrapper == null)
-        {
+                                final Map<Object, Object> subscriberMap, final Object subscriber) {
+        if (classTopicOrPatternWrapper == null) {
             throw new IllegalArgumentException("Can't subscribe to null.");
         }
 
-        if (subscriber == null)
-        {
+        if (subscriber == null) {
             throw new IllegalArgumentException(
                     "Can't subscribe null subscriber to "
                             + classTopicOrPatternWrapper);
@@ -161,28 +139,22 @@ import java.util.Set;
         boolean alreadyExists = false;
         Object realSubscriber = subscriber;
         boolean isWeakRef = subscriber instanceof WeakReference;
-        if (isWeakRef)
-        {
+        if (isWeakRef) {
             realSubscriber = ((WeakReference) subscriber).get();
         }
 
-        if (realSubscriber == null)
-        {
+        if (realSubscriber == null) {
             return false;// already garbage collected? Weird.
         }
-        synchronized (listenerLock)
-        {
+        synchronized (listenerLock) {
             List currentSubscribers = (List) subscriberMap
                     .get(classTopicOrPatternWrapper);
-            if (currentSubscribers == null)
-            {
+            if (currentSubscribers == null) {
 
                 currentSubscribers = new ArrayList();
                 subscriberMap.put(classTopicOrPatternWrapper,
                         currentSubscribers);
-            }
-            else
-            {
+            } else {
                 // Double subscription check and stale subscriber cleanup
                 // Need to compare the underlying referents for WeakReferences
                 // and
@@ -197,13 +169,11 @@ import java.util.Set;
                 // should
                 // not subscribe the same object twice
                 for (Iterator iterator = currentSubscribers.iterator(); iterator
-                        .hasNext();)
-                {
+                        .hasNext(); ) {
                     Object currentSubscriber = iterator.next();
                     Object realCurrentSubscriber = getRealSubscriberAndCleanStaleSubscriberIfNecessary(
                             iterator, currentSubscriber);
-                    if (realSubscriber.equals(realCurrentSubscriber))
-                    {
+                    if (realSubscriber.equals(realCurrentSubscriber)) {
                         // Already subscribed.
                         // Remove temporarily, to add to the end of the calling
                         // list
@@ -219,13 +189,10 @@ import java.util.Set;
     }
 
     protected Object getRealSubscriberAndCleanStaleSubscriberIfNecessary(
-            Iterator iterator, Object existingSubscriber)
-    {
-        if (existingSubscriber instanceof WeakReference)
-        {
+            Iterator iterator, Object existingSubscriber) {
+        if (existingSubscriber instanceof WeakReference) {
             existingSubscriber = ((WeakReference) existingSubscriber).get();
-            if (existingSubscriber == null)
-            {
+            if (existingSubscriber == null) {
                 iterator.remove();
                 // decWeakRefPlusProxySubscriberCount();
             }
@@ -234,61 +201,48 @@ import java.util.Set;
         return existingSubscriber;
     }
 
-    protected boolean unsubscribe(Object o, Map subscriberMap, Object subscriber)
-    {
+    protected boolean unsubscribe(Object o, Map subscriberMap, Object subscriber) {
 
-        if (o == null)
-        {
+        if (o == null) {
             throw new IllegalArgumentException("Can't unsubscribe to null.");
         }
-        if (subscriber == null)
-        {
+        if (subscriber == null) {
             throw new IllegalArgumentException(
                     "Can't unsubscribe null subscriber to " + o);
         }
 
-        synchronized (listenerLock)
-        {
+        synchronized (listenerLock) {
             return removeFromSetResolveWeakReferences(subscriberMap, o,
                     subscriber);
         }
     }
 
     private boolean removeFromSetResolveWeakReferences(Map map, Object key,
-                                                       Object toRemove)
-    {
+                                                       Object toRemove) {
         List subscribers = (List) map.get(key);
-        if (subscribers == null)
-        {
+        if (subscribers == null) {
             return false;
         }
-        if (subscribers.remove(toRemove))
-        {
-            if (toRemove instanceof WeakReference)
-            {
+        if (subscribers.remove(toRemove)) {
+            if (toRemove instanceof WeakReference) {
                 // decWeakRefPlusProxySubscriberCount();
             }
             return true;
         }
 
         // search for WeakReferences and ProxySubscribers
-        for (Iterator iter = subscribers.iterator(); iter.hasNext();)
-        {
+        for (Iterator iter = subscribers.iterator(); iter.hasNext(); ) {
             Object existingSubscriber = iter.next();
 
-            if (existingSubscriber instanceof WeakReference)
-            {
+            if (existingSubscriber instanceof WeakReference) {
                 WeakReference wr = (WeakReference) existingSubscriber;
                 Object realRef = wr.get();
-                if (realRef == null)
-                {
+                if (realRef == null) {
                     // clean up a garbage collected reference
                     iter.remove();
                     // decWeakRefPlusProxySubscriberCount();
                     return true;
-                }
-                else if (realRef == toRemove)
-                {
+                } else if (realRef == toRemove) {
                     iter.remove();
                     // decWeakRefPlusProxySubscriberCount();
                     return true;
@@ -299,52 +253,42 @@ import java.util.Set;
     }
 
 
-    protected void publish(final Object event, final List subscribers)
-    {
-        if (event == null )
-        {
+    protected void publish(final Object event, final List subscribers) {
+        if (event == null) {
             throw new IllegalArgumentException(
                     "Can't publish to null event.");
         }
 
-        if (subscribers == null || subscribers.isEmpty())
-        {
+        if (subscribers == null || subscribers.isEmpty()) {
 
             return;
         }
 
-        for (int i = 0; i < subscribers.size(); i++)
-        {
+        for (int i = 0; i < subscribers.size(); i++) {
             Object eh = subscribers.get(i);
-            if (event != null)
-            {
+            if (event != null) {
                 Subscriber eventSubscriber = (Subscriber) eh;
-                try
-                {
+                try {
                     eventSubscriber.onEvent(event);
-                }
-                catch (Throwable e)
-                {
+                } catch (Throwable e) {
                     e.printStackTrace();
                 }
             }
         }
     }
 
-    class PublishRunnable implements Runnable
-    {
+    class PublishRunnable implements Runnable {
         Object theEvent;
         List theSubscribers;
-        public PublishRunnable(final Object event, final List subscribers)
-        {
+
+        public PublishRunnable(final Object event, final List subscribers) {
             this.theEvent = event;
             this.theSubscribers = subscribers;
         }
 
         @Override
-        public void run()
-        {
-            publish(theEvent,theSubscribers);
+        public void run() {
+            publish(theEvent, theSubscribers);
         }
     }
 }
