@@ -21,7 +21,7 @@ public interface Publisher {
     public void unsubscribe(Subscriber subscriber);
 
     /**
-     * 发送事件 event，将会在{@link com.rdm.base.Subscriber}回调接口处理。
+     * 发送事件 event，将会在{@link com.pxl.base.Subscriber}回调接口处理。
      * @param event
      */
     public void publish(Object event);
