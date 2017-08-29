@@ -1,6 +1,7 @@
 package com.pxl.base.app;
 
 import android.app.Application;
+import android.os.Handler;
 import android.os.Looper;
 
 import com.pxl.base.ILog;
@@ -15,6 +16,13 @@ public abstract class BaseApp extends Application {
     public static final String TAG = "BaseApp";
 
     private static BaseApp gApp = null;
+
+    private final Handler mHandler;
+
+    public BaseApp(){
+        mHandler = new Handler(Looper.getMainLooper());
+    }
+
     @Override
     public void onCreate() {
         super.onCreate();
@@ -52,5 +60,13 @@ public abstract class BaseApp extends Application {
             }
         }
         return mNotification;
+    }
+
+    /**
+     * 返回全局
+     * @return
+     */
+    public static BaseApp get(){
+        return gApp;
     }
 }

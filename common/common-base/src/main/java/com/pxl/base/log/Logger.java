@@ -10,21 +10,21 @@ public class Logger implements AppenderAttachable
 	private static final String FQCN = Logger.class.getName();
 	
 	/**
-	 * Logger??Name
+	 * Logger Name
 	 */
 	protected String name;
 
 	volatile protected Level level;
 
 	/**
-	 * Logger??parent??????Logger???????parent
+	 * Logger parent Logger parent
 	 */
 	volatile protected Logger parent;
 
 	protected Vector<Appender> appenderList;
 
 	/**
-	 * ??????parent?????????
+	 * parent
 	 */
 	protected boolean additive = true;
 
@@ -35,7 +35,7 @@ public class Logger implements AppenderAttachable
 	}
 
 	/**
-	 * ????Appender
+	 * Appender
 	 */
 	synchronized public void addAppender(Appender newAppender)
 	{
@@ -75,7 +75,7 @@ public class Logger implements AppenderAttachable
 	}
 
 	/**
-	 * ??????§Ö?Appender
+	 * Appender
 	 */
 	synchronized void closeNestedAppenders()
 	{

@@ -34,4 +34,5 @@ dependencies {
 
     compile project(':common:common-base')
     compile project(':common:common-ui')
+    compile project(path: ':dump:utilcode')
 }
