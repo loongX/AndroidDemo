@@ -4,7 +4,7 @@ import android.app.Application;
 import android.os.Handler;
 import android.os.Looper;
 
-import com.pxl.base.ILog;
+import com.pxl.common.ILog;
 import com.pxl.base.Publisher;
 
 /**

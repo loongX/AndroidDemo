@@ -1,7 +1,7 @@
 package com.example.stepstrack;
 
 import com.pxl.base.log.TLog;
-import com.pxl.base.ILog;
+import com.pxl.common.ILog;
 
 /**
  * Created by lokierao on 2016/5/17.

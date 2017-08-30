@@ -9,7 +9,12 @@ import com.loonglongago.annotation.view.ViewUtils;
 import com.loonglongago.annotation.view.annotation.ContentView;
 import com.loonglongago.annotation.view.annotation.ViewInject;
 import com.loonglongago.annotation.view.annotation.event.OnClick;
-import com.loonglongago.annotation.R;
+
+//import com.pxl.base.view.ViewUtils;
+//import com.pxl.base.view.annotation.ContentView;
+//import com.pxl.base.view.annotation.ViewInject;
+//import com.pxl.base.view.annotation.event.OnClick;
+
 
 /**
  *

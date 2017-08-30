@@ -1,8 +1,6 @@
 package com.example.stepstrack;
 
-import android.os.Handler;
-
-import com.pxl.base.ILog;
+import com.pxl.common.ILog;
 import com.pxl.base.app.BaseApp;
 
 /**
