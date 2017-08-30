@@ -1,4 +1,4 @@
-include ':app'
+include ':app', ':annotation'
 
 //Android库
 include 'common'
@@ -11,7 +11,6 @@ include 'dump'
 //include 'dump:GPSLocation'
 //include 'dump:gpslocationtest'
 //include 'dump:installapk'
-//include 'dump:key'
 //include 'dump:PullToRefresh-master'
 //include 'dump:runtimepermission'
 //include 'dump:tiemerpicker'
@@ -34,6 +33,7 @@ include 'treated'
 //include 'treated:subcriber'
 //include 'treated:threadpoolexample'
 //include 'treated:ilog'
+//include 'treated:key'
 
 
 
