@@ -11,6 +11,12 @@ import com.loonglongago.annotation.view.annotation.ViewInject;
 import com.loonglongago.annotation.view.annotation.event.OnClick;
 import com.loonglongago.annotation.R;
 
+/**
+ *
+ * {@linkplain DoubleKeyValueMap heello}
+ * {@link ViewInject}
+ * @see android.view.LayoutInflater.Factory#
+ */
 @ContentView(R.layout.activity_main)
 public class MainActivity extends AppCompatActivity {
 

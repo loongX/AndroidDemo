@@ -156,7 +156,7 @@ public class ViewUtils {
                         if (annType.getAnnotation(EventBase.class) != null) {
                             method.setAccessible(true);
                             try {
-                                // ProGuard：-keep class * extends java.lang.annotation.Annotation { *; }
+                                /*ProGuard：-keep class * extends java.lang.annotation.Annotation { *; }*/
                                 Method valueMethod = annType.getDeclaredMethod("value");
                                 Method parentIdMethod = null;
                                 try {
