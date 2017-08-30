@@ -1,4 +1,4 @@
-include ':app', ':annotation'
+include ':app'
 
 //Android库
 include 'common'
@@ -24,16 +24,14 @@ include 'dump'
 include 'repositories'
 include 'repositories:demobase'
 include 'repositories:demoui'
+include 'repositories:annotation'
 //include 'repositories:subcriber'
 //include 'repositories:threadpoolexample'
 //include 'repositories:ilog'
 //include 'repositories:key'
 
 //实例
-
 include ':stepstrack'
-
-//处理过的
 
 
 
