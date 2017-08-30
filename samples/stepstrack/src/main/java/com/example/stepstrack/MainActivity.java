@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import android.view.Gravity;
+import android.view.MotionEvent;
 import android.view.View;
 
 import android.view.WindowManager;
@@ -72,5 +73,11 @@ public class MainActivity extends AppCompatActivity {
         mLayoutParams.x = 100;
         mLayoutParams.y = 300;
         windowManager.addView(mFloationButton, mLayoutParams);
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+
+        return super.onTouchEvent(event);
     }
 }

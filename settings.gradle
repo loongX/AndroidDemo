@@ -1,32 +1,39 @@
-include ':app', ':ilog', ':threadpoolexample'
-include 'common'
-include 'dump'
-include 'samples'
-include 'repositories'
-include 'tests'
+include ':app'
 
+//Android库
+include 'common'
 include 'common:common-base'
 include 'common:common-ui'
 
-include 'dump:blogMoveWave'
-include 'dump:GPSLocation'
-include 'dump:gpslocationtest'
-include 'dump:installapk'
-include 'dump:key'
-include 'dump:PullToRefresh-master'
-include 'dump:runtimepermission'
-include 'dump:tiemerpicker'
-include 'dump:uploadPicDemo'
-include 'dump:utilcode'
-include 'dump:utilcodeSample'
-include 'dump:xutils'
+//待处理
+include 'dump'
+//include 'dump:blogMoveWave'
+//include 'dump:GPSLocation'
+//include 'dump:gpslocationtest'
+//include 'dump:installapk'
+//include 'dump:key'
+//include 'dump:PullToRefresh-master'
+//include 'dump:runtimepermission'
+//include 'dump:tiemerpicker'
+//include 'dump:uploadPicDemo'
+//include 'dump:utilcode'
+//include 'dump:utilcodeSample'
+//include 'dump:xutils'
 
+//demo仓库
+include 'repositories'
 include 'repositories:demobase'
 include 'repositories:demoui'
 
+//实例
+include 'samples'
 include 'samples:stepstrack'
 
-
+//处理过的
+include 'treated'
+//include 'treated:subcriber'
+//include 'treated:threadpoolexample'
+//include 'treated:ilog'
 
 
 
