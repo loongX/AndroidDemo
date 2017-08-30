@@ -58,43 +58,36 @@ public class ThreadManager {
     }
 
 
-    public static class ThreadBuilder
-    {
+    public static class ThreadBuilder {
         private static ThreadBuilder instance = new ThreadBuilder();
 
-        public static ThreadBuilder getInstance ()
-        {
+        public static ThreadBuilder getInstance() {
             return instance;
         }
 
-        private static final int CPU_COUNT          = Runtime.getRuntime().availableProcessors();
-        private static final int CORE_POOL_SIZE     = CPU_COUNT + 1;
-        private static final int MAXIMUM_POOL_SIZE  = CPU_COUNT * 2 + 1;
+        private static final int CPU_COUNT = Runtime.getRuntime().availableProcessors();
+        private static final int CORE_POOL_SIZE = CPU_COUNT + 1;
+        private static final int MAXIMUM_POOL_SIZE = CPU_COUNT * 2 + 1;
         private static final int MAXIMUM_QUEUE_SIZE = ThreadManager.isDebug() ? 18 : 128;
-        private static final int KEEP_ALIVE         = 1;
+        private static final int KEEP_ALIVE = 1;
 
         private static final String QT_THREAD_NAME_PREFIX = "QtThread #";
 
         private static final BlockingQueue<Runnable> POOL_WORK_QUEUE =
                 new LinkedBlockingQueue<Runnable>(MAXIMUM_QUEUE_SIZE);
 
-        private static final ThreadFactory THREAD_FACTORY = new ThreadFactory()
-        {
+        private static final ThreadFactory THREAD_FACTORY = new ThreadFactory() {
             private final AtomicInteger mCount = new AtomicInteger(1);
 
-            public Thread newThread (Runnable r)
-            {
+            public Thread newThread(Runnable r) {
                 return ThreadManager.newThread(r, QT_THREAD_NAME_PREFIX + mCount.getAndIncrement());
             }
         };
 
-        private static final RejectedExecutionHandler DISCARD_OLDEST_POLICY = new ThreadPoolExecutor.DiscardOldestPolicy()
-        {
+        private static final RejectedExecutionHandler DISCARD_OLDEST_POLICY = new ThreadPoolExecutor.DiscardOldestPolicy() {
             @Override
-            public void rejectedExecution (Runnable r, ThreadPoolExecutor e)
-            {
-                if (ThreadManager.isDebug())
-                {
+            public void rejectedExecution(Runnable r, ThreadPoolExecutor e) {
+                if (ThreadManager.isDebug()) {
                     String rejectedTaskMsg = "Task " + r.toString() +
                             " rejected from " +
                             e.toString();
@@ -115,71 +108,55 @@ public class ThreadManager {
 
         public static final Executor SERIAL_EXECUTOR = new SerialExecutor();
 
-        private ThreadBuilder ()
-        {
+        private ThreadBuilder() {
         }
 
-        public Executor getThreadPoolExecutor ()
-        {
+        public Executor getThreadPoolExecutor() {
             return THREAD_POOL_EXECUTOR;
         }
 
-        public Executor getSerialExecutor ()
-        {
+        public Executor getSerialExecutor() {
             return SERIAL_EXECUTOR;
         }
 
-        private static class SerialExecutor implements Executor
-        {
+        private static class SerialExecutor implements Executor {
             private final ArrayDeque<Runnable> mTasks = new ArrayDeque<Runnable>();
 
             private Runnable mActive;
 
-            public synchronized void execute (final Runnable r)
-            {
-                mTasks.offer(new Runnable()
-                {
-                    public void run ()
-                    {
-                        try
-                        {
+            public synchronized void execute(final Runnable r) {
+                mTasks.offer(new Runnable() {
+                    public void run() {
+                        try {
                             r.run();
-                        }
-                        finally
-                        {
+                        } finally {
                             scheduleNext();
                         }
                     }
                 });
-                if (mActive == null)
-                {
+                if (mActive == null) {
                     scheduleNext();
                 }
             }
 
-            protected synchronized void scheduleNext ()
-            {
-                if ((mActive = mTasks.poll()) != null)
-                {
+            protected synchronized void scheduleNext() {
+                if ((mActive = mTasks.poll()) != null) {
                     THREAD_POOL_EXECUTOR.execute(mActive);
                 }
             }
         }
 
-        private static String runningTaskState ()
-        {
+        private static String runningTaskState() {
             StringBuilder sb = new StringBuilder();
 
             int count = 0;
 
             Map<Thread, StackTraceElement[]> activeThreads = Thread.getAllStackTraces();
-            for (Map.Entry<Thread, StackTraceElement[]> entry : activeThreads.entrySet())
-            {
+            for (Map.Entry<Thread, StackTraceElement[]> entry : activeThreads.entrySet()) {
                 Thread thread = entry.getKey();
                 String name = thread.getName();
 
-                if (name != null && name.startsWith(QT_THREAD_NAME_PREFIX))
-                {
+                if (name != null && name.startsWith(QT_THREAD_NAME_PREFIX)) {
                     count++;
 
                     sb.append(thread.toString()).append('\n').append(stackTraceElement(entry.getValue()));
@@ -191,14 +168,11 @@ public class ThreadManager {
             return sb.toString();
         }
 
-        private static String stackTraceElement (StackTraceElement[] elements)
-        {
-            if (elements != null)
-            {
+        private static String stackTraceElement(StackTraceElement[] elements) {
+            if (elements != null) {
                 StringBuilder sTrace = new StringBuilder(100);
 
-                for (StackTraceElement element : elements)
-                {
+                for (StackTraceElement element : elements) {
                     sTrace.append(element.toString()).append('\n');
                 }
 
