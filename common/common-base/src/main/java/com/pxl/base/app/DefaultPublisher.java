@@ -26,6 +26,7 @@ import java.util.Set;
     private Map<Object, Class> typeMap = new HashMap();
     private Handler mHandler;
 
+    //设置主线程，用来处理事件
     public DefaultPublisher(Looper looper) {
         mHandler = new Handler(looper);
 
@@ -43,7 +44,7 @@ import java.util.Set;
                     "Event subscriber must not be null");
         }
 
-        //如果订阅了就不在订阅
+        //如果订阅了就不再订阅
         //subscriber.cls = eventClass;
         Class cls = typeMap.get(subscriber);
         if (cls != null) {
@@ -93,7 +94,7 @@ import java.util.Set;
         Set keys = classMap.keySet();
         for (Iterator iterator = keys.iterator(); iterator.hasNext(); ) {
             Class cl = (Class) iterator.next();
-            if (cl.isAssignableFrom(eventClass)) {
+            if (cl.isAssignableFrom(eventClass)) {//判断是否同一种类，是否相同或是另一个类的子类或接口
                 Collection subscribers = (Collection) classMap.get(cl);
                 if (result == null) {
                     result = new ArrayList();
@@ -105,19 +106,19 @@ import java.util.Set;
         return result;
     }
 
-    //创建弱引用
+    //创建弱引用 备份 主要为获取订阅者的备份事件处理
     private List createCopyOfContentsRemoveWeakRefs(
             Collection subscribersOrVetoListeners) {
-        if (subscribersOrVetoListeners == null) {
+        if (subscribersOrVetoListeners == null) {//检查非空值
             return null;
         }
         List copyOfSubscribersOrVetolisteners = new ArrayList(
-                subscribersOrVetoListeners.size());
+                subscribersOrVetoListeners.size());//新建ArrayList
         for (Iterator iter = subscribersOrVetoListeners.iterator(); iter
                 .hasNext(); ) {
             Object elem = iter.next();
-            if (elem instanceof WeakReference) {
-                Object hardRef = ((WeakReference) elem).get();
+            if (elem instanceof WeakReference) {//检查是否弱引用
+                Object hardRef = ((WeakReference) elem).get();//把弱引用下的多个子类挖掘出来
                 if (hardRef == null) {
                     // Was reclaimed, unsubscribe
                     iter.remove();
@@ -228,7 +229,7 @@ import java.util.Set;
         }
     }
 
-    //移除弱引用订阅者
+    //移除弱引用订阅者，由上到下层层移除
     private boolean removeFromSetResolveWeakReferences(Map map, Object key,
                                                        Object toRemove) {
         List subscribers = (List) map.get(key);
