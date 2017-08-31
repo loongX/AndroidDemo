@@ -32,6 +32,7 @@ import java.util.Set;
     }
 
 
+    //订阅事件
     @Override
     public <T> void subscribe(Class<T> eventClass, Subscriber<T> subscriber) {
         if (eventClass == null) {
@@ -42,6 +43,7 @@ import java.util.Set;
                     "Event subscriber must not be null");
         }
 
+        //如果订阅了就不在订阅
         //subscriber.cls = eventClass;
         Class cls = typeMap.get(subscriber);
         if (cls != null) {
@@ -51,11 +53,13 @@ import java.util.Set;
             }
             return;
         }
+        //put into 事件处理方法和事件类型
         typeMap.put(subscriber, eventClass);
         subscribe(eventClass, subscriberMap,
                 new WeakReference<Subscriber>(subscriber));
     }
 
+    //解除事件
     @Override
     public void unsubscribe(Subscriber subscriber) {
         Class cls = typeMap.remove(subscriber);
@@ -65,6 +69,7 @@ import java.util.Set;
 
     }
 
+    //外部调用产生事件
     @Override
     public void publish(Object event) {
         if (event == null) {
@@ -75,6 +80,7 @@ import java.util.Set;
         mHandler.post(new PublishRunnable(event, getSubscribers(event.getClass())));
     }
 
+    //获取订阅者
     public <T> List<T> getSubscribers(Class<T> eventClass) {
         synchronized (listenerLock) {
             return getSubscribersToClass(eventClass);
@@ -99,6 +105,7 @@ import java.util.Set;
         return result;
     }
 
+    //创建弱引用
     private List createCopyOfContentsRemoveWeakRefs(
             Collection subscribersOrVetoListeners) {
         if (subscribersOrVetoListeners == null) {
@@ -125,8 +132,10 @@ import java.util.Set;
         return copyOfSubscribersOrVetolisteners;
     }
 
+    //订阅事件，subscribe(eventClass, subscriberMap, new WeakReference<Subscriber>(subscriber));
     protected boolean subscribe(final Object classTopicOrPatternWrapper,
                                 final Map<Object, Object> subscriberMap, final Object subscriber) {
+        //检查非空值
         if (classTopicOrPatternWrapper == null) {
             throw new IllegalArgumentException("Can't subscribe to null.");
         }
@@ -140,7 +149,7 @@ import java.util.Set;
         Object realSubscriber = subscriber;
         boolean isWeakRef = subscriber instanceof WeakReference;
         if (isWeakRef) {
-            realSubscriber = ((WeakReference) subscriber).get();
+            realSubscriber = ((WeakReference) subscriber).get();//获取弱引用订阅对象
         }
 
         if (realSubscriber == null) {
@@ -148,12 +157,12 @@ import java.util.Set;
         }
         synchronized (listenerLock) {
             List currentSubscribers = (List) subscriberMap
-                    .get(classTopicOrPatternWrapper);
-            if (currentSubscribers == null) {
+                    .get(classTopicOrPatternWrapper);//根据事件类型查找
+            if (currentSubscribers == null) {//如果没有订阅者
 
                 currentSubscribers = new ArrayList();
                 subscriberMap.put(classTopicOrPatternWrapper,
-                        currentSubscribers);
+                        currentSubscribers);//put一个进去
             } else {
                 // Double subscription check and stale subscriber cleanup
                 // Need to compare the underlying referents for WeakReferences
@@ -169,7 +178,7 @@ import java.util.Set;
                 // should
                 // not subscribe the same object twice
                 for (Iterator iterator = currentSubscribers.iterator(); iterator
-                        .hasNext(); ) {
+                        .hasNext(); ) {//迭代器，清理重复的
                     Object currentSubscriber = iterator.next();
                     Object realCurrentSubscriber = getRealSubscriberAndCleanStaleSubscriberIfNecessary(
                             iterator, currentSubscriber);
@@ -188,6 +197,7 @@ import java.util.Set;
         }
     }
 
+    //清除订阅者
     protected Object getRealSubscriberAndCleanStaleSubscriberIfNecessary(
             Iterator iterator, Object existingSubscriber) {
         if (existingSubscriber instanceof WeakReference) {
@@ -201,6 +211,7 @@ import java.util.Set;
         return existingSubscriber;
     }
 
+    //解除订阅
     protected boolean unsubscribe(Object o, Map subscriberMap, Object subscriber) {
 
         if (o == null) {
@@ -217,6 +228,7 @@ import java.util.Set;
         }
     }
 
+    //移除弱引用订阅者
     private boolean removeFromSetResolveWeakReferences(Map map, Object key,
                                                        Object toRemove) {
         List subscribers = (List) map.get(key);
@@ -253,6 +265,7 @@ import java.util.Set;
     }
 
 
+    //并让订阅者执行对应事件，订阅者已经筛选出来了
     protected void publish(final Object event, final List subscribers) {
         if (event == null) {
             throw new IllegalArgumentException(
@@ -277,6 +290,7 @@ import java.util.Set;
         }
     }
 
+    //开启任务运行执行事件
     class PublishRunnable implements Runnable {
         Object theEvent;
         List theSubscribers;

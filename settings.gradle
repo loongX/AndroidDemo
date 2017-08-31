@@ -1,5 +1,3 @@
-include ':app'
-
 //Android库
 include 'common'
 include 'common:common-base'
@@ -29,6 +27,7 @@ include 'repositories:annotation'
 //include 'repositories:threadpoolexample'
 //include 'repositories:ilog'
 //include 'repositories:key'
+include 'repositories:jnitest'
 
 //实例
 include ':stepstrack'
