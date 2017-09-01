@@ -1,5 +1,5 @@
 //Android库
-include 'common'
+include 'common', ':Observer'
 include 'common:common-base'
 include 'common:common-ui'
 
