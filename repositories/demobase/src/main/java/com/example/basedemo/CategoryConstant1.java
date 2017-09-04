@@ -9,6 +9,7 @@ import com.example.basedemo.sample.json.JsonParseActivity;
 import com.example.basedemo.sample.json.multitypejson.MultiTypeJsonActivity;
 import com.example.basedemo.threadpool.ThreadPoolActivity;
 import com.example.basedemo.view.ui.InjectViewActivity;
+import com.example.basedemo.webview.WebViewActivity;
 
 
 /**
@@ -27,6 +28,7 @@ public class CategoryConstant1 {
             KeyActivity.class,//7
             IlogActivity.class,//8
             AnnotationActivity.class,//8
+            WebViewActivity.class,//9
 
     };
 
@@ -40,5 +42,6 @@ public class CategoryConstant1 {
             "按键控制",//7
             "日记",//8
             "注解",//8
+            "WebView",//9
     };
 }

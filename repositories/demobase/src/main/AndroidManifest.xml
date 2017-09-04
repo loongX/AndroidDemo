@@ -28,6 +28,7 @@
         <activity android:name=".key.KeyActivity"/>
         <activity android:name=".ilog.IlogActivity"/>
         <activity android:name=".annotation.AnnotationActivity"/>
+        <activity android:name=".webview.WebViewActivity"/>
 
         <activity android:name=".arouter.testactivity.SchemeFilterActivity">
 
