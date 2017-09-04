@@ -70,7 +70,9 @@ public class WebViewActivity extends AppCompatActivity {
         mWebView = (WebView) findViewById(R.id.web_view);
         mProgressbar = (ProgressBar) findViewById(R.id.progress_bar);
         String url = "https://www.baidu.com";
-        mWebView.loadUrl(fileurl);
+        mWebView.loadUrl(fileurl);//本地web
+//        mWebView.loadUrl(weburl);//web
+//        mWebView.loadUrl(url);//百度
     }
 
     private void initWebSettings() {
