@@ -17,7 +17,6 @@ include 'dump'
 //include 'dump:utilcodeSample'
 //include 'dump:xutils'
 
-
 //demo仓库
 include 'repositories'
 include 'repositories:demobase'
@@ -26,7 +25,7 @@ include 'repositories:demoui'
 include 'repositories:jnitest'
 
 //实例
-include ':stepstrack'
+include ':stepstrack', ':permission'
 
 
 
