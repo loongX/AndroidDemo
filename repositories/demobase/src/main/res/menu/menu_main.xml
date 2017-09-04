@@ -4,17 +4,17 @@
     <item
         android:id="@+id/page_up"
         android:orderInCategory="100"
-
+        app:showAsAction="never"
         android:title="page_up"/>
-    <!--app:showAsAction="never"-->
+
     <item
         android:id="@+id/page_down"
         android:orderInCategory="200"
-
+        app:showAsAction="never"
         android:title="page_down"/>
     <item
         android:id="@+id/refresh"
         android:orderInCategory="200"
-
+        app:showAsAction="never"
         android:title="refresh"/>
 </menu>

@@ -32,9 +32,12 @@ import com.example.basedemo.R;
  * Created by pxl on 2017/9/4.
  */
 
-public class WebViewActivity extends AppCompatActivity{
-//        原文地址
-//        String url = "https://jiandanxinli.github.io/2016-08-31.html";
+public class WebViewActivity extends AppCompatActivity {
+    //原文地址
+    String weburl = "https://jiandanxinli.github.io/2016-08-31.html";
+    //本地网址
+    String fileurl = "file:///android_asset/web/WebView·开车指南 · 简单心理技术团队.html";
+
 
     private WebView mWebView;
 
@@ -67,7 +70,7 @@ public class WebViewActivity extends AppCompatActivity{
         mWebView = (WebView) findViewById(R.id.web_view);
         mProgressbar = (ProgressBar) findViewById(R.id.progress_bar);
         String url = "https://www.baidu.com";
-        mWebView.loadUrl(url);
+        mWebView.loadUrl(fileurl);
     }
 
     private void initWebSettings() {
