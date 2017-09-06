@@ -1,6 +1,7 @@
 package com.example.basedemo;
 
 import com.example.basedemo.annotation.AnnotationActivity;
+import com.example.basedemo.annotation.diy.DIYAnnotationActivity;
 import com.example.basedemo.arouter.ArouterActivity;
 import com.example.basedemo.ilog.IlogActivity;
 import com.example.basedemo.key.KeyActivity;
@@ -28,7 +29,8 @@ public class CategoryConstant1 {
             KeyActivity.class,//7
             IlogActivity.class,//8
             AnnotationActivity.class,//8
-            WebViewActivity.class,//9
+            DIYAnnotationActivity.class,//9
+            WebViewActivity.class,//10
 
     };
 
@@ -42,6 +44,7 @@ public class CategoryConstant1 {
             "按键控制",//7
             "日记",//8
             "注解",//8
+            "DIY注解",//8
             "WebView",//9
     };
 }

@@ -25,7 +25,7 @@ include 'repositories:demoui'
 include 'repositories:jnitest'
 
 //实例
-include ':stepstrack', ':permission'
+include ':stepstrack', ':permission', ':greendaot'
 
 
 
