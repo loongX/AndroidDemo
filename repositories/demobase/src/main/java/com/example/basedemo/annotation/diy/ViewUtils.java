@@ -18,13 +18,7 @@ package com.example.basedemo.annotation.diy;
 import android.app.Activity;
 import android.view.View;
 
-import com.example.basedemo.annotation.view.EventListenerManager;
-import com.example.basedemo.annotation.view.ViewInjectInfo;
-import com.example.basedemo.annotation.view.annotation.*;
-import com.example.basedemo.annotation.view.annotation.event.EventBase;
 
-import java.lang.annotation.Annotation;
-import java.lang.reflect.Array;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -105,6 +99,7 @@ public class ViewUtils {
                 try {
                     for (int id : viewId) {
                         View v = activity.findViewById(id);
+                        //获取setclicklistener方法
                         Method setClickListener = v.getClass().getMethod("setOnClickListener", View.OnClickListener.class);
                         setClickListener.invoke(v, listener);
                     }
