@@ -20,6 +20,7 @@ import android.view.View;
 
 import com.example.basedemo.annotation.view.EventListenerManager;
 import com.example.basedemo.annotation.view.ViewInjectInfo;
+import com.example.basedemo.annotation.view.annotation.*;
 import com.example.basedemo.annotation.view.annotation.event.EventBase;
 
 import java.lang.annotation.Annotation;
@@ -38,6 +39,22 @@ public class ViewUtils {
     public static void inject(Activity activity) {
         injectObject(activity, new ViewFinder(activity));
         injectEvent(activity);
+    }
+
+
+    public static void injectContentView(Object handler){
+        Class<?> handlerType = handler.getClass();
+        // inject ContentView
+
+        ContentView contentView = handlerType.getAnnotation(ContentView.class);
+        if (contentView != null) {
+            try {
+                Method setContentViewMethod = handlerType.getMethod("setContentView", int.class);
+                setContentViewMethod.invoke(handler, contentView.value());
+            } catch (Throwable e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     @SuppressWarnings("ConstantConditions")
@@ -66,20 +83,22 @@ public class ViewUtils {
         }
     }
 
+
+
     private static void injectEvent(final Activity activity) {
         Class<? extends Activity> clazz = activity.getClass();
         Method[] methods = clazz.getDeclaredMethods();
-        for (final Method method : methods) {
-            OnClick click = method.getAnnotation(OnClick.class);
+        for (final Method methodY : methods) {
+            OnClick click = methodY.getAnnotation(OnClick.class);
             if (click != null) {
 
                 int[] viewId = click.value();
-                method.setAccessible(true);
+                methodY.setAccessible(true);
                 Object listener = Proxy.newProxyInstance(View.OnClickListener.class.getClassLoader(),
                         new Class[]{View.OnClickListener.class}, new InvocationHandler() {
                             @Override
                             public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-                                return method.invoke(activity, args);
+                                return methodY.invoke(activity, args);
                             }
                         });
 

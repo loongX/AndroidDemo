@@ -7,19 +7,20 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.basedemo.R;
-import com.example.basedemo.annotation.view.annotation.event.*;
 
 
+@ContentView(R.layout.activity_annotation)
 public class DIYAnnotationActivity extends AppCompatActivity {
 
 
-    @ViewInject(value = R.id.textView,parentId = 0)
+    @ViewInject(R.id.textView)
     private TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_annotation);
+//        setContentView(R.layout.activity_annotation);
+        ViewUtils.injectContentView(this);
 
         ViewUtils.inject(this);
 
