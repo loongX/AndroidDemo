@@ -18,12 +18,7 @@ package com.example.basedemo.annotation.diy;
 import android.app.Activity;
 import android.view.View;
 
-
-
-
 import java.lang.reflect.Field;
-
-
 
 
 public class ViewUtils {
@@ -34,8 +29,6 @@ public class ViewUtils {
     public static void inject(Activity activity) {
         injectObject(activity, new ViewFinder(activity));
     }
-
-
 
     @SuppressWarnings("ConstantConditions")
     private static void injectObject(Object handler, ViewFinder finder) {
