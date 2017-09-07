@@ -1,17 +1,19 @@
 package com.example.basedemo.annotation.diy;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
 import com.example.basedemo.R;
+import com.example.basedemo.annotation.view.annotation.event.*;
 
 
 public class DIYAnnotationActivity extends AppCompatActivity {
 
 
-    @ViewInject(R.id.textView)
+    @ViewInject(value = R.id.textView,parentId = 0)
     private TextView textView;
 
     @Override
@@ -30,5 +32,9 @@ public class DIYAnnotationActivity extends AppCompatActivity {
 
     }
 
+    @OnClick(R.id.tb_2)
+    public void onClick(View v) {
+        textView.setText("你按了button2");
+    }
 
 }
