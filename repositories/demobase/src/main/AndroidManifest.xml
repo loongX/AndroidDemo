@@ -30,6 +30,9 @@
         <activity android:name=".annotation.AnnotationActivity"/>
         <activity android:name=".annotation.diy.DIYAnnotationActivity"/>
         <activity android:name=".webview.WebViewActivity"/>
+        <activity android:name=".recyclerview.RecyclerViewMainActivity"/>
+        <activity android:name=".recyclerview.ListViewActivity"/>
+        <activity android:name=".recyclerview.GridViewActivity"/>
 
         <activity android:name=".arouter.testactivity.SchemeFilterActivity">
 

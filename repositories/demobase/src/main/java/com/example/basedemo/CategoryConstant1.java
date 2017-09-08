@@ -6,6 +6,7 @@ import com.example.basedemo.arouter.ArouterActivity;
 import com.example.basedemo.ilog.IlogActivity;
 import com.example.basedemo.key.KeyActivity;
 import com.example.basedemo.listview.ListViewActivity;
+import com.example.basedemo.recyclerview.RecyclerViewMainActivity;
 import com.example.basedemo.sample.json.JsonParseActivity;
 import com.example.basedemo.sample.json.multitypejson.MultiTypeJsonActivity;
 import com.example.basedemo.threadpool.ThreadPoolActivity;
@@ -28,9 +29,10 @@ public class CategoryConstant1 {
             ThreadPoolActivity.class,//6
             KeyActivity.class,//7
             IlogActivity.class,//8
-            AnnotationActivity.class,//8
-            DIYAnnotationActivity.class,//9
-            WebViewActivity.class,//10
+            AnnotationActivity.class,//9
+            DIYAnnotationActivity.class,//10
+            WebViewActivity.class,//11
+            RecyclerViewMainActivity.class,//12
 
     };
 
@@ -43,8 +45,9 @@ public class CategoryConstant1 {
             "线程池",//6
             "按键控制",//7
             "日记",//8
-            "注解",//8
-            "DIY注解",//8
-            "WebView",//9
+            "注解",//9
+            "DIY注解",//10
+            "WebView",//11
+            "RecyclerView",//12
     };
 }
