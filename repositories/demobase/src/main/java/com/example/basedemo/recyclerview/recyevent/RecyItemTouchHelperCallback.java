@@ -64,6 +64,9 @@ public class RecyItemTouchHelperCallback extends ItemTouchHelper.Callback {
         return true;
     }
 
+    /**
+     * 侧滑删除后会回调的方法
+     */
     @Override
     public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction) {
         int adapterPosition = viewHolder.getAdapterPosition();
@@ -71,6 +74,9 @@ public class RecyItemTouchHelperCallback extends ItemTouchHelper.Callback {
         ((RecyAdapter) mAdapter).getDataList().remove(adapterPosition);
     }
 
+    /**
+     * 拖动选择状态改变回调
+     */
     @Override
     public void onSelectedChanged(RecyclerView.ViewHolder viewHolder, int actionState) {
         if (actionState != ItemTouchHelper.ACTION_STATE_IDLE) {
@@ -79,6 +85,9 @@ public class RecyItemTouchHelperCallback extends ItemTouchHelper.Callback {
         super.onSelectedChanged(viewHolder, actionState);
     }
 
+    /**
+     * 回到正常状态的时候回调
+     */
     @Override
     public void clearView(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder) {
         super.clearView(recyclerView, viewHolder);

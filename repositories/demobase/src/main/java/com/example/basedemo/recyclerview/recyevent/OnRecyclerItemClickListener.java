@@ -36,6 +36,7 @@ public abstract class OnRecyclerItemClickListener implements RecyclerView.OnItem
 
     }
 
+    //回调事件
     public abstract void onItemClick(RecyclerView.ViewHolder viewHolder);
     public abstract void onLongClick(RecyclerView.ViewHolder viewHolder);
 

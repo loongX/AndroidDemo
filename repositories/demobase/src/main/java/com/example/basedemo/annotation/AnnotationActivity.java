@@ -37,18 +37,18 @@ public class AnnotationActivity extends AppCompatActivity {
         ViewUtils.injectContentView(this);
 
         ViewUtils.inject(this);
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-
-//                try {
-//                    Thread.sleep(2000);
-//                } catch (InterruptedException e) {
-//                    e.printStackTrace();
-//                }
-                textView.setText("OtherThread");
-            }
-        }).start();
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//
+////                try {
+////                    Thread.sleep(2000);
+////                } catch (InterruptedException e) {
+////                    e.printStackTrace();
+////                }
+//                textView.setText("OtherThread");
+//            }
+//        }).start();
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,14 +59,14 @@ public class AnnotationActivity extends AppCompatActivity {
     }
 
 
-    @OnClick(R.id.tb_2)
-    public void onClick(View v) {
-        textView.setText("你按了button2");
-    }
-
-    int count = 0;
-    @OnClick(R.id.tb_1)
-    public void onClick1(View v) {
-        textView.setText("你按了button1,次数：" + (++count));
-    }
+//    @OnClick(R.id.tb_2)
+//    public void onClick(View v) {
+//        textView.setText("你按了button2");
+//    }
+//
+//    int count = 0;
+//    @OnClick(R.id.tb_1)
+//    public void onClick1(View v) {
+//        textView.setText("你按了button1,次数：" + (++count));
+//    }
 }

@@ -43,6 +43,7 @@ public class DividerGridItemDecoration extends RecyclerView.ItemDecoration{
             final RecyclerView.LayoutParams params = (RecyclerView.LayoutParams) child
                     .getLayoutParams();
             final int left = child.getLeft() - params.leftMargin;
+
             final int right = child.getRight() + params.rightMargin
                     + lineWidth;
             final int top = child.getBottom() + params.bottomMargin;
@@ -133,7 +134,7 @@ public class DividerGridItemDecoration extends RecyclerView.ItemDecoration{
         return false;
     }
 
-
+    //每个ItemView的间隔
     @Override
     public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
         boolean b = state.willRunPredictiveAnimations();
