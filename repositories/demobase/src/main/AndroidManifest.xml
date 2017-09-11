@@ -24,16 +24,13 @@
         <activity android:name=".arouter.ArouterActivity" />
         <activity android:name=".arouter.testactivity.Test1Activity" />
         <activity android:name=".arouter.testactivity.Test2Activity" />
-        <activity android:name=".threadpool.ThreadPoolActivity"/>
-        <activity android:name=".key.KeyActivity"/>
-        <activity android:name=".ilog.IlogActivity"/>
-        <activity android:name=".annotation.AnnotationActivity"/>
-        <activity android:name=".annotation.diy.DIYAnnotationActivity"/>
-        <activity android:name=".webview.WebViewActivity"/>
-        <activity android:name=".recyclerview.RecyclerViewMainActivity"/>
-        <activity android:name=".recyclerview.ListViewActivity"/>
-        <activity android:name=".recyclerview.GridViewActivity"/>
-
+        <activity android:name=".threadpool.ThreadPoolActivity" />
+        <activity android:name=".key.KeyActivity" />
+        <activity android:name=".ilog.IlogActivity" />
+        <activity android:name=".webview.WebViewActivity" />
+        <activity android:name=".recyclerview.RecyclerViewMainActivity" />
+        <activity android:name=".recyclerview.ListViewActivity" />
+        <activity android:name=".recyclerview.GridViewActivity" />
         <activity android:name=".arouter.testactivity.SchemeFilterActivity">
 
             <!-- Schame -->
@@ -66,13 +63,14 @@
         <activity
             android:name=".view.ui.InjectViewActivity"
             android:label="@string/title_activity_inject_view"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" />
 
-        </activity>
-        <activity android:name=".bar.StatusBarActivity"
-            android:screenOrientation="landscape">
+        <activity android:name=".annotation.AnnotationMainActivty" />
+        <activity android:name=".annotation.ButterknifeActivity" />
+        <activity android:name=".annotation.AnnotationActivity" />
+        <activity android:name=".annotation.diy.DIYAnnotationActivity" />
 
-        </activity>
+        <activity android:name=".dagger2.Dagger2Activity"></activity>
     </application>
 
 </manifest>

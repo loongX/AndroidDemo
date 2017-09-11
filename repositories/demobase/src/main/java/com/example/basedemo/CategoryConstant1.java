@@ -1,9 +1,10 @@
 package com.example.basedemo;
 
 import com.example.basedemo.annotation.AnnotationActivity;
+import com.example.basedemo.annotation.AnnotationMainActivty;
 import com.example.basedemo.annotation.diy.DIYAnnotationActivity;
 import com.example.basedemo.arouter.ArouterActivity;
-import com.example.basedemo.bar.StatusBarActivity;
+import com.example.basedemo.dagger2.Dagger2Activity;
 import com.example.basedemo.ilog.IlogActivity;
 import com.example.basedemo.key.KeyActivity;
 import com.example.basedemo.listview.ListViewActivity;
@@ -30,11 +31,10 @@ public class CategoryConstant1 {
             ThreadPoolActivity.class,//6
             KeyActivity.class,//7
             IlogActivity.class,//8
-            AnnotationActivity.class,//9
-            DIYAnnotationActivity.class,//10
-            WebViewActivity.class,//11
-            RecyclerViewMainActivity.class,//12
-            StatusBarActivity.class,//13
+            AnnotationMainActivty.class,//9
+            WebViewActivity.class,//10
+            RecyclerViewMainActivity.class,//11
+            Dagger2Activity.class,//12
 
     };
 
@@ -48,9 +48,8 @@ public class CategoryConstant1 {
             "按键控制",//7
             "日记",//8
             "注解",//9
-            "DIY注解",//10
-            "WebView",//11
-            "RecyclerView",//12
-            "沉浸栏",//13
+            "WebView",//10
+            "RecyclerView",//11
+            "Dagger2",//12
     };
 }

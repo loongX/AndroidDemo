@@ -22,6 +22,8 @@ public class RecyItemTouchHelperCallback extends ItemTouchHelper.Callback {
 
     public RecyItemTouchHelperCallback(RecyclerView.Adapter mAdapter) {
         this.mAdapter = mAdapter;
+        isSwipeEnable = true;
+        isFirstDragUnable = false;
     }
 
     public RecyItemTouchHelperCallback(RecyclerView.Adapter mAdapter, boolean isSwipeEnable, boolean isFirstDragUnable) {
