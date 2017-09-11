@@ -14,7 +14,7 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         javaCompileOptions {
             annotationProcessorOptions {
-                arguments = [ moduleName  : project.getName() ]
+                arguments = [moduleName: project.getName()]
             }
         }
 
@@ -41,14 +41,21 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
-    //阿里router机制
-    compile 'com.alibaba:arouter-api:1.2.1.1'
-    annotationProcessor 'com.alibaba:arouter-compiler:1.1.2.1'
-    compile 'com.jakewharton:butterknife:8.8.1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 
+    //compile project
     compile project(':common:common-base')
     compile project(':common:common-ui')
 
+    //阿里router机制
+    compile 'com.alibaba:arouter-api:1.2.1.1'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.1.2.1'
+
+    //butterknife
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    //dagger2
+    compile 'com.google.dagger:dagger:2.11'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.11'
 
 }

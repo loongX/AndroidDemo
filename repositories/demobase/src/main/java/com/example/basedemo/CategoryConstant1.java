@@ -4,6 +4,7 @@ import com.example.basedemo.annotation.AnnotationActivity;
 import com.example.basedemo.annotation.AnnotationMainActivty;
 import com.example.basedemo.annotation.diy.DIYAnnotationActivity;
 import com.example.basedemo.arouter.ArouterActivity;
+import com.example.basedemo.dagger2.Dagger2Activity;
 import com.example.basedemo.ilog.IlogActivity;
 import com.example.basedemo.key.KeyActivity;
 import com.example.basedemo.listview.ListViewActivity;
@@ -33,6 +34,7 @@ public class CategoryConstant1 {
             AnnotationMainActivty.class,//9
             WebViewActivity.class,//10
             RecyclerViewMainActivity.class,//11
+            Dagger2Activity.class,//12
 
     };
 
@@ -48,5 +50,6 @@ public class CategoryConstant1 {
             "注解",//9
             "WebView",//10
             "RecyclerView",//11
+            "Dagger2",//12
     };
 }
