@@ -3,6 +3,7 @@ package com.example.basedemo;
 import com.example.basedemo.annotation.AnnotationActivity;
 import com.example.basedemo.annotation.diy.DIYAnnotationActivity;
 import com.example.basedemo.arouter.ArouterActivity;
+import com.example.basedemo.bar.StatusBarActivity;
 import com.example.basedemo.ilog.IlogActivity;
 import com.example.basedemo.key.KeyActivity;
 import com.example.basedemo.listview.ListViewActivity;
@@ -33,6 +34,7 @@ public class CategoryConstant1 {
             DIYAnnotationActivity.class,//10
             WebViewActivity.class,//11
             RecyclerViewMainActivity.class,//12
+            StatusBarActivity.class,//13
 
     };
 
@@ -49,5 +51,6 @@ public class CategoryConstant1 {
             "DIY注解",//10
             "WebView",//11
             "RecyclerView",//12
+            "沉浸栏",//13
     };
 }

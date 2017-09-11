@@ -66,7 +66,13 @@
         <activity
             android:name=".view.ui.InjectViewActivity"
             android:label="@string/title_activity_inject_view"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".bar.StatusBarActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
     </application>
 
 </manifest>
