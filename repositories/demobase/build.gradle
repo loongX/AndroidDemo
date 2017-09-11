@@ -44,5 +44,11 @@ dependencies {
     //阿里router机制
     compile 'com.alibaba:arouter-api:1.2.1.1'
     annotationProcessor 'com.alibaba:arouter-compiler:1.1.2.1'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    compile project(':common:common-base')
+    compile project(':common:common-ui')
+
 
 }

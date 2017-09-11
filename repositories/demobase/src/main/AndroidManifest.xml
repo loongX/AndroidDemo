@@ -27,8 +27,7 @@
         <activity android:name=".threadpool.ThreadPoolActivity"/>
         <activity android:name=".key.KeyActivity"/>
         <activity android:name=".ilog.IlogActivity"/>
-        <activity android:name=".annotation.AnnotationActivity"/>
-        <activity android:name=".annotation.diy.DIYAnnotationActivity"/>
+
         <activity android:name=".webview.WebViewActivity"/>
         <activity android:name=".recyclerview.RecyclerViewMainActivity"/>
         <activity android:name=".recyclerview.ListViewActivity"/>
@@ -67,6 +66,11 @@
             android:name=".view.ui.InjectViewActivity"
             android:label="@string/title_activity_inject_view"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".annotation.AnnotationMainActivty"/>
+        <activity android:name=".annotation.ButterknifeActivity"/>
+        <activity android:name=".annotation.AnnotationActivity"/>
+        <activity android:name=".annotation.diy.DIYAnnotationActivity"/>
     </application>
 
 </manifest>
