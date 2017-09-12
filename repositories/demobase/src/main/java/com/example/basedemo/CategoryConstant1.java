@@ -3,6 +3,7 @@ package com.example.basedemo;
 import com.example.basedemo.annotation.AnnotationCatalogActivity;
 import com.example.basedemo.arouter.ArouterActivity;
 import com.example.basedemo.bar.StatusBarActivity;
+import com.example.basedemo.bar.catalog.BarCatalogActivity;
 import com.example.basedemo.dagger2.Dagger2Activity;
 import com.example.basedemo.ilog.IlogActivity;
 import com.example.basedemo.key.KeyActivity;
@@ -34,7 +35,7 @@ public class CategoryConstant1 {
             WebViewActivity.class,//10
             RecyclerViewMainActivity.class,//11
             Dagger2Activity.class,//12
-            StatusBarActivity.class,//13
+            BarCatalogActivity.class,//13
 
     };
 
@@ -51,7 +52,7 @@ public class CategoryConstant1 {
             "WebView",//10
             "RecyclerView",//11
             "Dagger2",//12
-            "沉浸栏",//13
+            "状态栏",//13
 
     };
 }

@@ -72,6 +72,9 @@
         <activity android:name=".annotation.diy.DIYAnnotationActivity" />
 
         <activity android:name=".dagger2.Dagger2Activity"></activity>
+
+        <activity android:name=".bar.catalog.BarCatalogActivity"></activity>
+        <activity android:name=".bar.HideStatusBarActivity"></activity>
         <activity android:name=".bar.StatusBarActivity"
             android:screenOrientation="landscape">
 

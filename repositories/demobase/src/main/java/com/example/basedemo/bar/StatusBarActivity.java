@@ -21,6 +21,7 @@ public class StatusBarActivity extends AppCompatActivity {
     }
 
 //    http://blog.csdn.net/guolin_blog/article/details/51763825
+    //沉浸栏
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
