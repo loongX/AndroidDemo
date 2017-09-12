@@ -1,8 +1,6 @@
 package com.example.basedemo;
 
-import com.example.basedemo.annotation.AnnotationActivity;
-import com.example.basedemo.annotation.AnnotationMainActivty;
-import com.example.basedemo.annotation.diy.DIYAnnotationActivity;
+import com.example.basedemo.annotation.AnnotationCatalogActivity;
 import com.example.basedemo.arouter.ArouterActivity;
 import com.example.basedemo.bar.StatusBarActivity;
 import com.example.basedemo.dagger2.Dagger2Activity;
@@ -32,7 +30,7 @@ public class CategoryConstant1 {
             ThreadPoolActivity.class,//6
             KeyActivity.class,//7
             IlogActivity.class,//8
-            AnnotationMainActivty.class,//9
+            AnnotationCatalogActivity.class,//9
             WebViewActivity.class,//10
             RecyclerViewMainActivity.class,//11
             Dagger2Activity.class,//12
@@ -54,5 +52,6 @@ public class CategoryConstant1 {
             "RecyclerView",//11
             "Dagger2",//12
             "沉浸栏",//13
+
     };
 }

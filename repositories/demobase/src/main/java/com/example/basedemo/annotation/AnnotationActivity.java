@@ -6,10 +6,10 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.basedemo.R;
+import com.example.basedemo.annotation.base.DoubleKeyValueMap;
 import com.example.basedemo.annotation.view.ViewUtils;
 import com.example.basedemo.annotation.view.annotation.ContentView;
 import com.example.basedemo.annotation.view.annotation.ViewInject;
-import com.example.basedemo.annotation.view.annotation.event.OnClick;
 
 //import com.pxl.base.view.ViewUtils;
 //import com.pxl.base.view.annotation.ContentView;

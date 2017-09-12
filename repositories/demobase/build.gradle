@@ -1,9 +1,22 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        release {
+            keyAlias 'loonglongago'
+            keyPassword '123456'
+            storeFile file('../keystore.jks')
+            storePassword 'loonglongago'
+        }
+        debug {
+            keyAlias 'loonglongago'
+            keyPassword '123456'
+            storeFile file('../keystore.jks')
+            storePassword 'loonglongago'
+        }
+    }
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
-
     defaultConfig {
         applicationId "com.example.basedemo"
         minSdkVersion 15
@@ -20,16 +33,23 @@ android {
 
     }
     buildTypes {
+        debug {
+            println("====== buildTypes.debug ======")
+            signingConfig signingConfigs.debug
+        }
         release {
+            //是否混淆
             minifyEnabled false
+            //是否移除无用资源
+            zipAlignEnabled true
+            println("====== buildTypes.release ======")
+            signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
     defaultConfig {
         vectorDrawables.useSupportLibrary = true
     }
-
 }
 
 dependencies {
@@ -41,21 +61,16 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
-
     //compile project
     compile project(':common:common-base')
     compile project(':common:common-ui')
-
     //阿里router机制
     compile 'com.alibaba:arouter-api:1.2.1.1'
     annotationProcessor 'com.alibaba:arouter-compiler:1.1.2.1'
-
     //butterknife
     compile 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
-
     //dagger2
     compile 'com.google.dagger:dagger:2.11'
     annotationProcessor 'com.google.dagger:dagger-compiler:2.11'
-
 }

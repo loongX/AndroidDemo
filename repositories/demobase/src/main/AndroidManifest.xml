@@ -65,7 +65,8 @@
             android:label="@string/title_activity_inject_view"
             android:theme="@style/AppTheme.NoActionBar" />
 
-        <activity android:name=".annotation.AnnotationMainActivty" />
+        <!--注解-->
+        <activity android:name=".annotation.AnnotationCatalogActivity"></activity>
         <activity android:name=".annotation.ButterknifeActivity" />
         <activity android:name=".annotation.AnnotationActivity" />
         <activity android:name=".annotation.diy.DIYAnnotationActivity" />

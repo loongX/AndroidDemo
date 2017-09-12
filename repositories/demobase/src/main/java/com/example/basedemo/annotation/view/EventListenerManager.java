@@ -17,7 +17,7 @@ package com.example.basedemo.annotation.view;
 
 import android.view.View;
 
-import com.example.basedemo.annotation.DoubleKeyValueMap;
+import com.example.basedemo.annotation.base.DoubleKeyValueMap;
 import com.example.basedemo.annotation.view.annotation.event.EventBase;
 
 import java.lang.annotation.Annotation;

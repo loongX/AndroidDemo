@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-package com.example.basedemo.annotation;
+package com.example.basedemo.annotation.base;
 
 import java.util.ArrayList;
 import java.util.Collection;
