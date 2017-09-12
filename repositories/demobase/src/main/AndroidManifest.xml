@@ -66,19 +66,17 @@
             android:theme="@style/AppTheme.NoActionBar" />
 
         <!--注解-->
-        <activity android:name=".annotation.AnnotationCatalogActivity"></activity>
+        <activity android:name=".annotation.AnnotationCatalogActivity"/>
         <activity android:name=".annotation.ButterknifeActivity" />
         <activity android:name=".annotation.AnnotationActivity" />
         <activity android:name=".annotation.diy.DIYAnnotationActivity" />
 
-        <activity android:name=".dagger2.Dagger2Activity"></activity>
+        <activity android:name=".dagger2.Dagger2Activity"/>
 
-        <activity android:name=".bar.catalog.BarCatalogActivity"></activity>
-        <activity android:name=".bar.HideStatusBarActivity"></activity>
-        <activity android:name=".bar.StatusBarActivity"
-            android:screenOrientation="landscape">
-
-        </activity>
+        <activity android:name=".bar.catalog.BarCatalogActivity"/>
+        <activity android:name=".bar.StatusBarActivity"/>
+        <activity android:name=".bar.ImmersionStatusBarActivity"   android:screenOrientation="landscape"/>
+        <activity android:name=".bar.TransparentStatusBarActivity"/>
     </application>
 
 </manifest>

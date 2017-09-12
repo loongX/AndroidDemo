@@ -2,7 +2,6 @@ package com.example.basedemo;
 
 import com.example.basedemo.annotation.AnnotationCatalogActivity;
 import com.example.basedemo.arouter.ArouterActivity;
-import com.example.basedemo.bar.StatusBarActivity;
 import com.example.basedemo.bar.catalog.BarCatalogActivity;
 import com.example.basedemo.dagger2.Dagger2Activity;
 import com.example.basedemo.ilog.IlogActivity;
