@@ -46,6 +46,15 @@ values-v21/styles.xml
     <!--Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色-->
     <item name="android:statusBarColor">@android:color/transparent</item>
 </style>
+当状态栏需要设置一个单纯的颜色时：
+
+4.4：设置android：windowTranslucateStatus属性，并且手动添加一个和状态栏高度等高的View。
+5.0及以上：不设置android:windowTranslucateStatus属性，直接设置statusBarColor的色值。
+当状态栏需要设置一个图片
+
+4.4：直接设置android：windowTranslucateStatus属性。
+5.0：不设置，同时设置状态栏颜色透明，并使用另一个属性。
+
  */
 public class StatusBarActivity extends AppCompatActivity {
 
@@ -121,6 +130,7 @@ public class StatusBarActivity extends AppCompatActivity {
 
     /**
      * 设置透明状态栏,方法2
+     状态栏显示, 状态栏背景透明
      */
     private void setStatusBarUpperAPI() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {//21版本 5.0版本以上
@@ -156,6 +166,53 @@ public class StatusBarActivity extends AppCompatActivity {
                 ViewCompat.setFitsSystemWindows(mContentView.getChildAt(0), false);
             }
         }
+    }
+
+    //状态栏显示,状态栏的背景颜色需要设置
+    private void setStatusBarUpperAPI21(){
+        Window window = getWindow();
+        //取消设置透明状态栏,使 ContentView 内容不再覆盖状态栏
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+
+        //需要设置这个 flag 才能调用 setStatusBarColor 来设置状态栏颜色
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        //设置状态栏颜色
+        //由于setStatusBarColor()这个API最低版本支持21, 本人的是15,所以如果要设置颜色,自行到style中通过配置文件设置
+//        window.setStatusBarColor(getResources().getColor(R.color.colorPrimary));
+        ViewGroup mContentView = (ViewGroup) findViewById(Window.ID_ANDROID_CONTENT);
+        View mChildView = mContentView.getChildAt(0);
+        if (mChildView != null) {
+            //注意不是设置 ContentView 的 FitsSystemWindows, 而是设置 ContentView 的第一个子 View . 预留出系统 View 的空间.
+            ViewCompat.setFitsSystemWindows(mChildView, true);
+        }
+    }
+
+    //状态栏显示,状态栏的背景颜色需要设置
+    private void setStatusBarUpperAPI19() {
+        Window window = getWindow();
+        window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+
+        ViewGroup mContentView = (ViewGroup) findViewById(Window.ID_ANDROID_CONTENT);
+        int statusBarHeight = getStatusBarHeight();
+        int statusColor = getResources().getColor(R.color.colorPrimary);
+
+        View mTopView = mContentView.getChildAt(0);
+        if (mTopView != null && mTopView.getLayoutParams() != null &&
+                mTopView.getLayoutParams().height == statusBarHeight) {
+            //避免重复添加 View
+            mTopView.setBackgroundColor(statusColor);
+            return;
+        }
+        //使 ChildView 预留空间
+        if (mTopView != null) {
+            ViewCompat.setFitsSystemWindows(mTopView, true);
+        }
+
+        //添加假 View
+        mTopView = new View(this);
+        ViewGroup.LayoutParams lp = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, statusBarHeight);
+        mTopView.setBackgroundColor(statusColor);
+        mContentView.addView(mTopView, 0, lp);
     }
 
     private int getStatusBarHeight() {
@@ -204,5 +261,37 @@ public class StatusBarActivity extends AppCompatActivity {
         actionBar.hide();
     }
 
+    /*
+
+//
+//      用于控制NavigationBar的隐藏和显示
+//     你用的是Neux手机, 就会发现手机下面还有NavigationBar, 就是退出,Home,程序 3个按键的软键盘. 在全屏模式中,
+是无法隐藏掉NavigationBar的. 下面的代码提供隐藏的方法, 可讲代码加入到全屏模式的Activity中:
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if (hasFocus) {
+            hideSystemUI();
+        }
+    }
+
+    private void showSystemUI() {
+        mDecorView.setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                        | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                        | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                        | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+    }
+
+    private void hideSystemUI() {
+        mDecorView.setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                        | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                        | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                        | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+//                        | View.SYSTEM_UI_FLAG_FULLSCREEN
+                        | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+    }
+     */
 
 }
