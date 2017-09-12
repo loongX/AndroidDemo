@@ -84,6 +84,7 @@ public class StatusBarActivity extends AppCompatActivity {
                 break;
             case transparent_StatusBar:
                 transparentStatusBar();
+//                setStatusBarUpperAPI19();
 //                setStatusBarUpperAPI();
                 break;
             case hide_StatusBar_A_NavigationBar:
@@ -110,7 +111,6 @@ public class StatusBarActivity extends AppCompatActivity {
     }
 
 
-
     /**
      * 透明状态栏
      */
@@ -123,6 +123,20 @@ public class StatusBarActivity extends AppCompatActivity {
             //需要设置这个 flag 才能调用 setStatusBarColor 来设置状态栏颜色
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             window.setStatusBarColor(Color.TRANSPARENT);
+        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {//19版本 4.4 - 5.0版本
+            Window window = getWindow();
+            window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            ViewGroup mContentView = (ViewGroup) findViewById(Window.ID_ANDROID_CONTENT);
+            View statusBarView = mContentView.getChildAt(0);
+            //移除假的 View
+            if (statusBarView != null && statusBarView.getLayoutParams() != null &&
+                    statusBarView.getLayoutParams().height == getStatusBarHeight()) {
+                mContentView.removeView(statusBarView);
+            }
+            //不预留空间
+            if (mContentView.getChildAt(0) != null) {
+                ViewCompat.setFitsSystemWindows(mContentView.getChildAt(0), false);
+            }
         }
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
@@ -130,7 +144,7 @@ public class StatusBarActivity extends AppCompatActivity {
 
     /**
      * 设置透明状态栏,方法2
-     状态栏显示, 状态栏背景透明
+     * 状态栏显示, 状态栏背景透明
      */
     private void setStatusBarUpperAPI() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {//21版本 5.0版本以上
@@ -150,7 +164,7 @@ public class StatusBarActivity extends AppCompatActivity {
                 ViewCompat.setFitsSystemWindows(mChildView, false);
             }
 
-        }  else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {//19版本 4.4 - 5.0版本
+        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {//19版本 4.4 - 5.0版本
 
             Window window = getWindow();
             window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
@@ -166,10 +180,12 @@ public class StatusBarActivity extends AppCompatActivity {
                 ViewCompat.setFitsSystemWindows(mContentView.getChildAt(0), false);
             }
         }
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
     }
 
     //状态栏显示,状态栏的背景颜色需要设置
-    private void setStatusBarUpperAPI21(){
+    private void setStatusBarUpperAPI21() {
         Window window = getWindow();
         //取消设置透明状态栏,使 ContentView 内容不再覆盖状态栏
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
