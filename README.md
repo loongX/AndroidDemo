@@ -5,7 +5,7 @@ Android代码练习
 #### 目录结构
 
 #### repositories 代码仓库
-<br>**demobase**
+<br>demobase
 <br>——listview网络加载优化
 <br>——简单json解析
 <br>——复杂json解析
@@ -19,14 +19,14 @@ Android代码练习
 <br>——RecyclerView
 <br>——Dagger2
 <br>——沉浸栏
-<br>**demoui**
+<br>demoui
 <br>——activitydialog
 <br>——滑动解锁
 <br>——listview下拉刷新
 
 #### common 通用框架
-<br>**common-base**
-<br>**common-ui**
+<br>common-base
+<br>common-ui
 
 #### dump 待处理代码
 
