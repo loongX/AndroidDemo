@@ -10,6 +10,7 @@ import com.example.basedemo.annotation.base.DoubleKeyValueMap;
 import com.example.basedemo.annotation.view.ViewUtils;
 import com.example.basedemo.annotation.view.annotation.ContentView;
 import com.example.basedemo.annotation.view.annotation.ViewInject;
+import com.example.basedemo.annotation.view.annotation.event.OnClick;
 
 //import com.pxl.base.view.ViewUtils;
 //import com.pxl.base.view.annotation.ContentView;
@@ -59,14 +60,14 @@ public class AnnotationActivity extends AppCompatActivity {
     }
 
 
-//    @OnClick(R.id.tb_2)
-//    public void onClick(View v) {
-//        textView.setText("你按了button2");
-//    }
-//
-//    int count = 0;
-//    @OnClick(R.id.tb_1)
-//    public void onClick1(View v) {
-//        textView.setText("你按了button1,次数：" + (++count));
-//    }
+    @OnClick(R.id.tb_2)
+    public void onClick(View v) {
+        textView.setText("你按了button2");
+    }
+
+    int count = 0;
+    @OnClick(R.id.tb_1)
+    public void onClick1(View v) {
+        textView.setText("你按了button1,次数：" + (++count));
+    }
 }
