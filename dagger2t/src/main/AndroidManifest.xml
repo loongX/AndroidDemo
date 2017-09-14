@@ -17,7 +17,7 @@
                 <!--<category android:name="android.intent.category.LAUNCHER" />-->
             <!--</intent-filter>-->
         <!--</activity>-->
-        <activity android:name=".app.MainActivityApp">
+        <activity android:name=".app.act.MainActivityApp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
