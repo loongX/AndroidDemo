@@ -12,7 +12,7 @@ import javax.inject.Qualifier;
  */
 @Qualifier
 @Documented
-@Retention(RetentionPolicy.RUNTIME)
+@Retention(RetentionPolicy.CLASS)
 public @interface SelfType {
     int value() default 1;
 }
