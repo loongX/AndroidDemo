@@ -59,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
 //        testDagger();
 //        OtherClass otherClass = new OtherClass();
         testDagger2();
+        byte[] par2 = {0x11};
+        Log.e("test", "test" + "".equals(par2));
     }
 
     private void testOrignal() {
