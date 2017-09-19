@@ -1,6 +1,5 @@
-package com.slzr.dagger2t;
+package com.slzr.dagger2test;
 
-import javax.inject.Named;
 import javax.inject.Singleton;
 
 import dagger.Module;

@@ -1,4 +1,4 @@
-package com.slzr.dagger2t.app.act;
+package com.slzr.dagger2test.app.act;
 
 import dagger.Module;
 import dagger.Provides;

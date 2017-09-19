@@ -1,4 +1,4 @@
-package com.slzr.dagger2t.app.act;
+package com.slzr.dagger2test.app.act;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -6,11 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 
-import com.slzr.dagger2t.app.DaggerApplication;
+import com.slzr.dagger2test.app.DaggerApplication;
 
-import com.slzr.dagger2t.R;
-import com.slzr.dagger2t.app.ApplicationBean;
-import com.slzr.dagger2t.app.ApplicationComponent;
+import com.slzr.dagger2test.R;
+import com.slzr.dagger2test.app.ApplicationBean;
+import com.slzr.dagger2test.app.ApplicationComponent;
 
 
 import javax.inject.Inject;

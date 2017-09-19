@@ -1,4 +1,4 @@
-package com.slzr.dagger2t;
+package com.slzr.dagger2test;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

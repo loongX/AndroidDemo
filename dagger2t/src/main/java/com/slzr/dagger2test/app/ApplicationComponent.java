@@ -1,4 +1,4 @@
-package com.slzr.dagger2t.app;
+package com.slzr.dagger2test.app;
 
 import javax.inject.Singleton;
 

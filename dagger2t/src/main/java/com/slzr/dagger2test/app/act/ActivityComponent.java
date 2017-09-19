@@ -1,7 +1,6 @@
-package com.slzr.dagger2t.app.act;
+package com.slzr.dagger2test.app.act;
 
-import com.slzr.dagger2t.MainActivity;
-import com.slzr.dagger2t.app.ApplicationComponent;
+import com.slzr.dagger2test.app.ApplicationComponent;
 
 import dagger.Component;
 

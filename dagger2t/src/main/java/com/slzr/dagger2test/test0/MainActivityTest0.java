@@ -1,10 +1,10 @@
-package com.slzr.dagger2t.test0;
+package com.slzr.dagger2test.test0;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
-import com.slzr.dagger2t.R;
+import com.slzr.dagger2test.R;
 
 public class MainActivityTest0 extends AppCompatActivity {
     String TAG = getClass().getSimpleName();

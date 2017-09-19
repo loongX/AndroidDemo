@@ -1,7 +1,5 @@
-package com.slzr.dagger2t;
+package com.slzr.dagger2test;
 
-
-import javax.inject.Inject;
 
 /**
  * Created by pxl on 2017/9/14.

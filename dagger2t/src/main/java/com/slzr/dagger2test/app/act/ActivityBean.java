@@ -1,4 +1,4 @@
-package com.slzr.dagger2t.app.act;
+package com.slzr.dagger2test.app.act;
 
 /**
  * Created by pxl on 2017/9/14.

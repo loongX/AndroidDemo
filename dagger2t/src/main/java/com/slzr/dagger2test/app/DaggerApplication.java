@@ -1,10 +1,7 @@
-package com.slzr.dagger2t.app;
+package com.slzr.dagger2test.app;
 
 import android.app.Application;
 import android.util.Log;
-
-import com.slzr.dagger2t.BeanComponent;
-import com.slzr.dagger2t.DaggerBeanComponent;
 
 import javax.inject.Inject;
 

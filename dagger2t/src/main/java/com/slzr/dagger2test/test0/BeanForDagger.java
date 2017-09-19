@@ -1,6 +1,6 @@
-package com.slzr.dagger2t.test0;
+package com.slzr.dagger2test.test0;
 
-import com.slzr.dagger2t.ParamForDagger;
+import com.slzr.dagger2test.ParamForDagger;
 
 import javax.inject.Inject;
 

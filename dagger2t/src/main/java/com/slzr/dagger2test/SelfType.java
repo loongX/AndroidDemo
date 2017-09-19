@@ -1,4 +1,4 @@
-package com.slzr.dagger2t;
+package com.slzr.dagger2test;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
