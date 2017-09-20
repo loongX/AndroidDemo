@@ -34,6 +34,7 @@
         <activity
             android:name=".beziercurve.Beziercurve">
         </activity>
+        <activity android:name=".springanimationdemo.AnimationMainActivity"/>
     </application>
 
 </manifest>

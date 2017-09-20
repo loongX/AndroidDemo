@@ -21,7 +21,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.uidemo"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -55,6 +55,10 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
+
+    compile 'com.facebook.rebound:rebound:0.3.8'
+    compile 'com.android.support:support-dynamic-animation:25.3.1'
+
 
     //compile project
     compile project(':common:common-base')
