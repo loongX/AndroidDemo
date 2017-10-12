@@ -4,6 +4,7 @@ import com.example.basedemo.annotation.AnnotationCatalogActivity;
 import com.example.basedemo.arouter.ArouterActivity;
 import com.example.basedemo.bar.catalog.BarCatalogActivity;
 import com.example.basedemo.dagger2.Dagger2Activity;
+import com.example.basedemo.encrypt.EncryptActivity;
 import com.example.basedemo.ilog.IlogActivity;
 import com.example.basedemo.key.KeyActivity;
 import com.example.basedemo.listview.ListViewActivity;
@@ -35,6 +36,7 @@ public class CategoryConstant1 {
             RecyclerViewMainActivity.class,//11
             Dagger2Activity.class,//12
             BarCatalogActivity.class,//13
+            EncryptActivity.class,//14
 
     };
 
@@ -52,6 +54,7 @@ public class CategoryConstant1 {
             "RecyclerView",//11
             "Dagger2",//12
             "状态栏",//13
+            "加密",//14
 
     };
 }
