@@ -25,6 +25,8 @@ public class EncryptActivity extends AppCompatActivity {
         String str = getMD5Code("shanghai");
         str +=  "\n" + getMD5Code("beijing");
         str += "\n" + getMD5Code("GUANZHOU");
+        str += "\n" + getMD5Code("dfdfdfdfdfffdf[B@351bc694");
+        str += "\n" + getMD5Code("czdfecdsfeererc[B@36c236a0");
         Log.i(TAG, str);
         ((TextView)findViewById(R.id.tv)).setText(str);
     }
