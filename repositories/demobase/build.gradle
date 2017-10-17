@@ -58,8 +58,8 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     //compile project
-    compile project(':common:common-base')
-    compile project(':common:common-ui')
+//    compile project(':common:common-base')
+//    compile project(':common:common-ui')
     //阿里router机制
     //butterknife
     //dagger2

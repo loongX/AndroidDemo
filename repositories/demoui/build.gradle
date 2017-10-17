@@ -61,6 +61,6 @@ dependencies {
 
 
     //compile project
-    compile project(':common:common-base')
-    compile project(':common:common-ui')
+//    compile project(':common:common-base')
+//    compile project(':common:common-ui')
 }
