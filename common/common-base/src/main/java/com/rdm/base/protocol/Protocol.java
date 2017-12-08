@@ -272,10 +272,12 @@ public abstract class Protocol<Param, Result extends Protocol.ProtocolResult> im
 
     private boolean isAbondon = false;
 
+    @Override
     public void abandon(){
         isAbondon = true;
     }
 
+    @Override
     public boolean isAbandon(){
         return isAbondon;
     }
