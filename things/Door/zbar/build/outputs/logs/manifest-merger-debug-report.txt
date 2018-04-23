@@ -1,0 +1,23 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Project\Android_Workspace\things\Door\zbar\src\main\AndroidManifest.xml:1:1-52
+INJECTED from D:\Project\Android_Workspace\things\Door\zbar\src\main\AndroidManifest.xml:1:1-52
+INJECTED from D:\Project\Android_Workspace\things\Door\zbar\src\main\AndroidManifest.xml:1:1-52
+	package
+		ADDED from D:\Project\Android_Workspace\things\Door\zbar\src\main\AndroidManifest.xml:1:11-50
+		INJECTED from D:\Project\Android_Workspace\things\Door\zbar\src\main\AndroidManifest.xml
+		INJECTED from D:\Project\Android_Workspace\things\Door\zbar\src\main\AndroidManifest.xml
+uses-sdk
+INJECTED from D:\Project\Android_Workspace\things\Door\zbar\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Project\Android_Workspace\things\Door\zbar\src\main\AndroidManifest.xml
+INJECTED from D:\Project\Android_Workspace\things\Door\zbar\src\main\AndroidManifest.xml
+INJECTED from D:\Project\Android_Workspace\things\Door\zbar\src\main\AndroidManifest.xml
+INJECTED from D:\Project\Android_Workspace\things\Door\zbar\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Project\Android_Workspace\things\Door\zbar\src\main\AndroidManifest.xml
+		ADDED from D:\Project\Android_Workspace\things\Door\zbar\src\main\AndroidManifest.xml
+		INJECTED from D:\Project\Android_Workspace\things\Door\zbar\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Project\Android_Workspace\things\Door\zbar\src\main\AndroidManifest.xml
+		ADDED from D:\Project\Android_Workspace\things\Door\zbar\src\main\AndroidManifest.xml
+		INJECTED from D:\Project\Android_Workspace\things\Door\zbar\src\main\AndroidManifest.xml

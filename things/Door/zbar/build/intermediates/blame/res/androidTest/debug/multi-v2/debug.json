@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Project\\Android_Workspace\\things\\Door\\zbar\\build\\intermediates\\res\\merged\\androidTest\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\Project\\Android_Workspace\\things\\Door\\qrcodecore\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "1942",
+                        "endColumns": "53",
+                        "endOffsets": "1991"
+                    }
+                }
+            ]
+        }
+    ]
+}

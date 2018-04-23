@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\Project\\Android_Workspace\\things\\Door\\zbar\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4_qrcode_default_scan_line.png.flat",
+        "source": "D:\\Project\\Android_Workspace\\things\\Door\\qrcodecore\\build\\intermediates\\bundles\\debug\\res\\mipmap-xxhdpi-v4\\qrcode_default_scan_line.png"
+    },
+    {
+        "merged": "D:\\Project\\Android_Workspace\\things\\Door\\zbar\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4_qrcode_default_grid_scan_line.png.flat",
+        "source": "D:\\Project\\Android_Workspace\\things\\Door\\qrcodecore\\build\\intermediates\\bundles\\debug\\res\\mipmap-xxhdpi-v4\\qrcode_default_grid_scan_line.png"
+    }
+]
