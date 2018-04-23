@@ -1,0 +1,127 @@
+apply plugin: 'com.android.application'
+
+android {
+    def versions = rootProject.ext.versions
+    /**
+     * compileSdkVersion specifies the Android API level Gradle should use to
+     * compile your app. This means your app can use the API features included in
+     * this API level and lower.
+     */
+    compileSdkVersion versions.compileSdkVersion
+
+    defaultConfig {
+        applicationId rootProject.applicationId
+        minSdkVersion versions.minSdkVersion
+        targetSdkVersion versions.targetSdkVersion
+        versionCode versions.versionCode
+        versionName versions.versionName
+
+        def moduleName = project.getName()
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [
+                        // ARouter处理器所需参数
+                        moduleName: moduleName,
+                        // XModulable处理器所需参数
+                        XModule   : moduleName
+                ]
+            }
+        }
+    }
+
+    /**
+     * 签名配置
+     */
+    signingConfigs {
+        def signInfo = rootProject.ext.signInfo
+        def releaseSignInfo = signInfo.release
+        def debugSignInfo = signInfo.debug
+
+        release {
+            storeFile file(releaseSignInfo.storeFilePath)
+            storePassword releaseSignInfo.storePassword
+            keyAlias releaseSignInfo.keyAlias
+            keyPassword releaseSignInfo.keyPassword
+        }
+        debug {
+            storeFile file(debugSignInfo.storeFilePath)
+            storePassword debugSignInfo.storePassword
+            keyAlias debugSignInfo.keyAlias
+            keyPassword debugSignInfo.keyPassword
+        }
+    }
+
+    buildTypes {
+        release {
+            // 签名
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'),
+                    'proguard-rules.pro',
+                    '../common/proguard-rules.pro',
+                    '../main/proguard-rules.pro',
+                    '../im/proguard-rules.pro',
+                    '../live/proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+        staging {
+            signingConfig signingConfigs.debug
+            debuggable true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'),
+                    'proguard-rules.pro',
+                    '../common/proguard-rules.pro',
+                    '../main/proguard-rules.pro',
+                    '../im/proguard-rules.pro',
+                    '../live/proguard-rules.pro'
+
+            // 按顺序查找依赖module的build type（命中就停止查找），然后进行对应build type的依赖
+            matchingFallbacks = ['debug', 'staging', 'release']
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/LICENSE.txt'
+    }
+}
+
+dependencies {
+    def dependencies = rootProject.ext.dependencies
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation dependencies.support.appcompat
+    implementation dependencies.support.constraint
+
+    annotationProcessor dependencies.arouter.annotationProcessor
+    annotationProcessor project(':XModulable-compiler')
+
+    def modules = rootProject.modules
+    def isMainStandalone = modules.main.isStandalone
+    def isIMStandalone = modules.im.isStandalone
+    def isLiveStandalone = modules.live.isStandalone
+    // 判断业务组件是否独立运行，实现业务组件的灵活依赖
+    if (isMainStandalone && isIMStandalone && isLiveStandalone) {
+        api project(':common')
+    } else {
+        if (!isMainStandalone) {
+            implementation project(':main')
+        }
+        if (!isIMStandalone) {
+            implementation project(':im')
+        }
+        if (!isLiveStandalone) {
+            implementation project(':live')
+        }
+    }
+}
