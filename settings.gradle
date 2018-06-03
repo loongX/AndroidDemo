@@ -1,0 +1,34 @@
+//Android库
+include 'common', ':Observer', ':jni', ':nettydemo'
+include 'common:common-base'
+include 'common:common-ui'
+//':FitAndroid', ':librararyforfileprovdider'
+//待处理
+include 'dump'
+//include 'dump:blogMoveWave'
+//include 'dump:GPSLocation'
+//include 'dump:gpslocationtest'
+//include 'dump:installapk'
+//include 'dump:PullToRefresh-master'
+//include 'dump:runtimepermission'
+//include 'dump:tiemerpicker'
+//include 'dump:uploadPicDemo'
+//include 'dump:utilcode'
+//include 'dump:utilcodeSample'
+//include 'dump:xutils'
+
+//demo仓库
+include 'repositories'
+include 'repositories:demobase'
+include 'repositories:demoui'
+//include 'repositories:subcriber'
+include 'repositories:jnitest'
+
+//实例
+include ':stepstrack', ':permission', ':greendaot', ':dagger2t', ':app'
+
+
+
+
+
+

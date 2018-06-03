@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="XLargeTextSize">20.0dip</dimen>
+    <dimen name="LargerTextSize">18.0dip</dimen>
+    <dimen name="LargeTextSize">16.0dip</dimen>
+    <dimen name="BasicTextSize">14.0dip</dimen>
+    <dimen name="TitleTextSize">18.0dip</dimen>
+    <dimen name="SmallTextSize">13.0dip</dimen>
+    <dimen name="SmallerTextSize">12.0dip</dimen>
+    <dimen name="SmallestTextSize">11.0dip</dimen>
+    <dimen name="LargestTextSize">25.0dip</dimen>
+
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+
+
+
+
+    <!-- navigation bar -->
+    <dimen name="navigation_bar_min_width">58dip</dimen>
+    <dimen name="navigation_bar_min_height">30dip</dimen>
+    <dimen name="navigation_bar_padding_icon">8dip</dimen>
+    <dimen name="status_bar_height">20dip</dimen>
+    <dimen name="title_bar_height">48dp</dimen>
+    <dimen name="title_bar_text_size">20sp</dimen>
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="activity_main_bottom_icon_size">25dp</dimen>
+
+
+    <dimen name="station_list_top_height">45dp</dimen>
+
+    <dimen name="default_corners">4dip</dimen>
+
+    <dimen name="car_item_margin_left">13dip</dimen>
+    <dimen name="car_item_Left_width">75dp</dimen>
+    <dimen name="car_item_height">35dp</dimen>
+    <dimen name="car_item_Left_textSize">14dp</dimen>
+
+
+    <dimen name="main_fragment_margin">13dp</dimen>
+
+</resources>
