@@ -25,6 +25,14 @@ allprojects {
             dirs 'libs'
         }
     }
+    gradle.taskGraph.whenReady {
+        tasks.each { task ->
+            if (task.name.equals('mockableAndroidJar')) {
+                task.enabled = false
+            }
+        }
+    }
+
 
 }
 

@@ -1,5 +1,8 @@
 //Android库
-include 'common', ':Observer', ':jni', ':nettydemo'
+include 'common'
+include ':Observer'
+include  ':jni'
+include  ':nettydemo'
 include 'common:common-base'
 include 'common:common-ui'
 //':FitAndroid', ':librararyforfileprovdider'
