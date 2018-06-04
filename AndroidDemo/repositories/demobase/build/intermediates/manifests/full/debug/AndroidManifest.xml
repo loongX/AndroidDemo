@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.basedemo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.1" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.example.basedemo.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.basedemo.sample.json.JsonParseActivity" />
+        <activity android:name="com.example.basedemo.sample.json.multitypejson.MultiTypeJsonActivity" />
+        <activity android:name="com.example.basedemo.listview.ListViewActivity" />
+        <activity android:name="com.example.basedemo.arouter.ArouterActivity" />
+        <activity android:name="com.example.basedemo.arouter.testactivity.Test1Activity" />
+        <activity android:name="com.example.basedemo.arouter.testactivity.Test2Activity" />
+        <activity android:name="com.example.basedemo.threadpool.ThreadPoolActivity" />
+        <activity android:name="com.example.basedemo.key.KeyActivity" />
+        <activity android:name="com.example.basedemo.ilog.IlogActivity" />
+        <activity android:name="com.example.basedemo.webview.WebViewActivity" />
+        <activity android:name="com.example.basedemo.recyclerview.RecyclerViewMainActivity" />
+        <activity android:name="com.example.basedemo.recyclerview.ListViewActivity" />
+        <activity android:name="com.example.basedemo.recyclerview.GridViewActivity" />
+        <activity android:name="com.example.basedemo.arouter.testactivity.SchemeFilterActivity" >
+
+            <!-- Schame -->
+            <intent-filter>
+                <data
+                    android:host="m.aliyun.com"
+                    android:scheme="arouter" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <!-- App Links -->
+            <intent-filter android:autoVerify="true" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="m.aliyun.com"
+                    android:scheme="http" />
+                <data
+                    android:host="m.aliyun.com"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.basedemo.view.ui.InjectViewActivity"
+            android:label="@string/title_activity_inject_view"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- 注解 -->
+        <activity android:name="com.example.basedemo.annotation.AnnotationCatalogActivity" />
+        <activity android:name="com.example.basedemo.annotation.ButterknifeActivity" />
+        <activity android:name="com.example.basedemo.annotation.AnnotationActivity" />
+        <activity android:name="com.example.basedemo.annotation.diy.DIYAnnotationActivity" />
+        <activity android:name="com.example.basedemo.dagger2.Dagger2Activity" />
+        <activity android:name="com.example.basedemo.bar.catalog.BarCatalogActivity" />
+        <activity android:name="com.example.basedemo.bar.StatusBarActivity" />
+        <activity
+            android:name="com.example.basedemo.bar.ImmersionStatusBarActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name="com.example.basedemo.bar.TransparentStatusBarActivity" />
+        <activity android:name="com.example.basedemo.encrypt.EncryptActivity" />
+    </application>
+
+</manifest>

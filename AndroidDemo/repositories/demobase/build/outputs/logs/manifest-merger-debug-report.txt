@@ -1,0 +1,285 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:2:1-83:12
+INJECTED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:2:1-83:12
+INJECTED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:2:1-83:12
+INJECTED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:2:1-83:12
+MERGED from [com.android.support:design:23.3.0] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\design-23.3.0.aar\8b37fd0dba7ddf7878d4734309d88703\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\0cc0a46603d8a4caef047697e54bf036\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\1a736876c101973263b0803f68388af5\AndroidManifest.xml:2:1-11:12
+MERGED from [com.alibaba:arouter-api:1.2.1.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\arouter-api-1.2.1.1.aar\dc61d3a1ecadd41fa8a9f2aa2eccc115\AndroidManifest.xml:2:1-10:12
+MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\f3258ea5f57b4b12dd748a4e4af192b6\AndroidManifest.xml:2:1-7:12
+MERGED from [com.android.support:recyclerview-v7:23.3.0] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-23.3.0.aar\b081c5dd231c56cd536d1dcf143ae1da\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\04489001c1c837c3199f6cce9081893f\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\1138e9474a9cdee839f63a46f31d8bf7\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\7f6a47f9e32dfd26e559ffd3271c20c5\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\a6fe59a35adacd42c1a4693e31e0dc37\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\f3a3064dc5b0ad7668925f9bb2161d43\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\7b0db883525d34100a9bdb5247bedd91\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\9014e0becda910ab7934a9b43f6d2e16\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\0236b2c4fe0a590e43367efcaf0abfe5\AndroidManifest.xml:17:1-31:12
+INJECTED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:2:1-83:12
+INJECTED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:2:1-83:12
+INJECTED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:2:1-83:12
+	package
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:3:5-35
+		INJECTED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml
+		INJECTED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:2:1-83:12
+		INJECTED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:2:1-83:12
+		INJECTED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:5:22-64
+application
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:7:5-81:19
+MERGED from [com.android.support:design:23.3.0] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\design-23.3.0.aar\8b37fd0dba7ddf7878d4734309d88703\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:23.3.0] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\design-23.3.0.aar\8b37fd0dba7ddf7878d4734309d88703\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\0cc0a46603d8a4caef047697e54bf036\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\0cc0a46603d8a4caef047697e54bf036\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\1a736876c101973263b0803f68388af5\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\1a736876c101973263b0803f68388af5\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\04489001c1c837c3199f6cce9081893f\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\04489001c1c837c3199f6cce9081893f\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\1138e9474a9cdee839f63a46f31d8bf7\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\1138e9474a9cdee839f63a46f31d8bf7\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\7f6a47f9e32dfd26e559ffd3271c20c5\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\7f6a47f9e32dfd26e559ffd3271c20c5\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\a6fe59a35adacd42c1a4693e31e0dc37\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\a6fe59a35adacd42c1a4693e31e0dc37\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\f3a3064dc5b0ad7668925f9bb2161d43\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\f3a3064dc5b0ad7668925f9bb2161d43\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\7b0db883525d34100a9bdb5247bedd91\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\7b0db883525d34100a9bdb5247bedd91\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\9014e0becda910ab7934a9b43f6d2e16\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\9014e0becda910ab7934a9b43f6d2e16\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\0236b2c4fe0a590e43367efcaf0abfe5\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\0236b2c4fe0a590e43367efcaf0abfe5\AndroidManifest.xml:29:5-20
+	android:supportsRtl
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:10:9-41
+	android:roundIcon
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:11:9-54
+	android:icon
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:8:9-35
+	android:theme
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:13:9-40
+activity#com.example.basedemo.MainActivity
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:14:9-20:20
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:14:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:15:13-19:29
+action#android.intent.action.MAIN
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:16:17-69
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:16:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:18:17-77
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:18:27-74
+activity#com.example.basedemo.sample.json.JsonParseActivity
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:21:9-67
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:21:19-64
+activity#com.example.basedemo.sample.json.multitypejson.MultiTypeJsonActivity
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:22:9-85
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:22:19-82
+activity#com.example.basedemo.listview.ListViewActivity
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:23:9-63
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:23:19-60
+activity#com.example.basedemo.arouter.ArouterActivity
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:24:9-61
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:24:19-58
+activity#com.example.basedemo.arouter.testactivity.Test1Activity
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:25:9-72
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:25:19-69
+activity#com.example.basedemo.arouter.testactivity.Test2Activity
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:26:9-72
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:26:19-69
+activity#com.example.basedemo.threadpool.ThreadPoolActivity
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:27:9-67
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:27:19-64
+activity#com.example.basedemo.key.KeyActivity
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:28:9-53
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:28:19-50
+activity#com.example.basedemo.ilog.IlogActivity
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:29:9-55
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:29:19-52
+activity#com.example.basedemo.webview.WebViewActivity
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:30:9-61
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:30:19-58
+activity#com.example.basedemo.recyclerview.RecyclerViewMainActivity
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:31:9-75
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:31:19-72
+activity#com.example.basedemo.recyclerview.ListViewActivity
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:32:9-67
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:32:19-64
+activity#com.example.basedemo.recyclerview.GridViewActivity
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:33:9-67
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:33:19-64
+activity#com.example.basedemo.arouter.testactivity.SchemeFilterActivity
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:34:9-62:20
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:34:19-76
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:37:13-46:29
+	android:autoVerify
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:49:28-53
+data
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:38:17-40:48
+	android:host
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:39:21-48
+	android:scheme
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:40:21-45
+action#android.intent.action.VIEW
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:42:17-69
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:42:25-66
+category#android.intent.category.DEFAULT
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:44:17-76
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:44:27-73
+category#android.intent.category.BROWSABLE
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:45:17-78
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:45:27-75
+activity#com.example.basedemo.view.ui.InjectViewActivity
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:63:9-66:59
+	android:label
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:65:13-63
+	android:theme
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:66:13-56
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:64:13-55
+activity#com.example.basedemo.annotation.AnnotationCatalogActivity
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:69:9-74
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:69:19-71
+activity#com.example.basedemo.annotation.ButterknifeActivity
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:70:9-68
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:70:19-65
+activity#com.example.basedemo.annotation.AnnotationActivity
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:71:9-67
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:71:19-64
+activity#com.example.basedemo.annotation.diy.DIYAnnotationActivity
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:72:9-74
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:72:19-71
+activity#com.example.basedemo.dagger2.Dagger2Activity
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:73:9-61
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:73:19-58
+activity#com.example.basedemo.bar.catalog.BarCatalogActivity
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:74:9-68
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:74:19-65
+activity#com.example.basedemo.bar.StatusBarActivity
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:75:9-59
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:75:19-56
+activity#com.example.basedemo.bar.ImmersionStatusBarActivity
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:76:9-78:53
+	android:screenOrientation
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:78:13-50
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:77:13-59
+activity#com.example.basedemo.bar.TransparentStatusBarActivity
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:79:9-70
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:79:19-67
+activity#com.example.basedemo.encrypt.EncryptActivity
+ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:80:9-70
+	android:name
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml:80:19-58
+uses-sdk
+INJECTED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml
+INJECTED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:23.3.0] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\design-23.3.0.aar\8b37fd0dba7ddf7878d4734309d88703\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:23.3.0] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\design-23.3.0.aar\8b37fd0dba7ddf7878d4734309d88703\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\0cc0a46603d8a4caef047697e54bf036\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\0cc0a46603d8a4caef047697e54bf036\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\1a736876c101973263b0803f68388af5\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\1a736876c101973263b0803f68388af5\AndroidManifest.xml:5:5-7:41
+MERGED from [com.alibaba:arouter-api:1.2.1.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\arouter-api-1.2.1.1.aar\dc61d3a1ecadd41fa8a9f2aa2eccc115\AndroidManifest.xml:6:5-8:41
+MERGED from [com.alibaba:arouter-api:1.2.1.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\arouter-api-1.2.1.1.aar\dc61d3a1ecadd41fa8a9f2aa2eccc115\AndroidManifest.xml:6:5-8:41
+MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\f3258ea5f57b4b12dd748a4e4af192b6\AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\f3258ea5f57b4b12dd748a4e4af192b6\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:recyclerview-v7:23.3.0] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-23.3.0.aar\b081c5dd231c56cd536d1dcf143ae1da\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.3.0] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-23.3.0.aar\b081c5dd231c56cd536d1dcf143ae1da\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\04489001c1c837c3199f6cce9081893f\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\04489001c1c837c3199f6cce9081893f\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\1138e9474a9cdee839f63a46f31d8bf7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\1138e9474a9cdee839f63a46f31d8bf7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\7f6a47f9e32dfd26e559ffd3271c20c5\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\7f6a47f9e32dfd26e559ffd3271c20c5\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\a6fe59a35adacd42c1a4693e31e0dc37\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\a6fe59a35adacd42c1a4693e31e0dc37\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\f3a3064dc5b0ad7668925f9bb2161d43\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\f3a3064dc5b0ad7668925f9bb2161d43\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\7b0db883525d34100a9bdb5247bedd91\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\7b0db883525d34100a9bdb5247bedd91\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\9014e0becda910ab7934a9b43f6d2e16\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\9014e0becda910ab7934a9b43f6d2e16\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\0236b2c4fe0a590e43367efcaf0abfe5\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\0236b2c4fe0a590e43367efcaf0abfe5\AndroidManifest.xml:21:5-23:58
+INJECTED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml
+INJECTED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\0cc0a46603d8a4caef047697e54bf036\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml
+		INJECTED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml
+		ADDED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml
+		INJECTED from D:\Android_Workspace\demo\AndroidDemo\AndroidDemo\repositories\demobase\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\0cc0a46603d8a4caef047697e54bf036\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\04489001c1c837c3199f6cce9081893f\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\04489001c1c837c3199f6cce9081893f\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\1138e9474a9cdee839f63a46f31d8bf7\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\1138e9474a9cdee839f63a46f31d8bf7\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\7f6a47f9e32dfd26e559ffd3271c20c5\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\7f6a47f9e32dfd26e559ffd3271c20c5\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\a6fe59a35adacd42c1a4693e31e0dc37\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\a6fe59a35adacd42c1a4693e31e0dc37\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\f3a3064dc5b0ad7668925f9bb2161d43\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\f3a3064dc5b0ad7668925f9bb2161d43\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\7b0db883525d34100a9bdb5247bedd91\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\7b0db883525d34100a9bdb5247bedd91\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\9014e0becda910ab7934a9b43f6d2e16\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\9014e0becda910ab7934a9b43f6d2e16\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\0236b2c4fe0a590e43367efcaf0abfe5\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\0236b2c4fe0a590e43367efcaf0abfe5\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\0cc0a46603d8a4caef047697e54bf036\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\loongago\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\0cc0a46603d8a4caef047697e54bf036\AndroidManifest.xml:26:9-47

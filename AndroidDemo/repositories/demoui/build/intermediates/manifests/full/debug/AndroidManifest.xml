@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.uidemo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25" />
+    <!-- 震动  SlideUnlockViewControl -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.1" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.example.uidemo.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.uidemo.activitydialog.ActivityDialog"
+            android:label="@string/title_activity_activity_dialog"
+            android:theme="@style/CustomActivityDialogStyle" >
+        </activity>
+        <activity android:name="com.example.uidemo.activitydialog.DialogControl" >
+        </activity>
+
+        <!-- slideunlockview -->
+        <activity android:name="com.example.uidemo.slideunlockview.SlideUnlockViewControl" >
+        </activity>
+        <activity android:name="com.example.uidemo.listviewfrash.ReFlashListViewMainActivity" >
+        </activity>
+        <activity android:name="com.example.uidemo.beziercurve.Beziercurve" >
+        </activity>
+        <activity android:name="com.example.uidemo.springanimationdemo.AnimationMainActivity" />
+        <activity android:name="com.example.uidemo.Animation.combination.TitleBarActivity" />
+    </application>
+
+</manifest>
